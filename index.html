@@ -223,6 +223,19 @@
       text-align: center;
     }
 
+    .dialog-step {
+      margin-top: 18px;
+      padding: 20px;
+      border: 2px solid rgba(36, 36, 36, 0.28);
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.72);
+    }
+
+    .dialog-step.completed {
+      border-color: #15803d;
+      background: rgba(217, 247, 223, 0.72);
+    }
+
     .answer-list {
       display: grid;
       gap: 12px;
@@ -476,7 +489,7 @@
           <button class="reveal-button" type="button" data-panel="model-solution" aria-expanded="false">Musterlösung</button>
           <div id="model-solution" class="help-panel"></div>
 
-          <button class="reveal-button" type="button" data-panel="real-task" aria-expanded="false">richtige Aufgabe</button>
+          <button class="reveal-button" type="button" data-panel="real-task" aria-expanded="false">Schritt für Schritt zur richtigen Lösung!</button>
           <div id="real-task" class="help-panel">
             <div id="real-task-content"></div>
           </div>
@@ -485,6 +498,7 @@
     </section>
   </main>
 
+  <script src="real-task-data.js"></script>
   <script>
     const tasks = {
       "kopf-1": {
@@ -659,36 +673,43 @@
       const container = document.getElementById("real-task-content");
 
       if (!realTask) {
-        container.innerHTML = "<p style='text-align:center'><strong>Diese richtige Aufgabe wird als Nächstes ergänzt.</strong></p>";
+        container.innerHTML = "<p style='text-align:center'><strong>Für diese Aufgabe fehlt noch der Schritt-für-Schritt-Weg.</strong></p>";
         return;
       }
 
-      let currentStep = 0;
+      container.innerHTML =
+        "<img class='real-task-image' src='" + realTask.image + "' alt='" + realTask.alt + "'>" +
+        "<div id='dialog-history'></div>";
 
-      function renderStep() {
-        if (currentStep >= realTask.steps.length) {
-          container.innerHTML =
-            "<img class='real-task-image' src='" + realTask.image + "' alt='" + realTask.alt + "'>" +
-            "<div class='dialog-finished'>🎉 Super! Du hast die Aufgabe selbst gelöst.<br><br>" +
-            realTask.result + "</div>";
+      const history = container.querySelector("#dialog-history");
+
+      function appendStep(stepIndex) {
+        if (stepIndex >= realTask.steps.length) {
+          const finished = document.createElement("div");
+          finished.className = "dialog-finished";
+          finished.innerHTML = "🎉 Super! Du hast die Aufgabe selbst gelöst.<br><br>" + realTask.result;
+          history.appendChild(finished);
+          finished.scrollIntoView({ behavior: "smooth", block: "nearest" });
           return;
         }
 
-        const step = realTask.steps[currentStep];
-        container.innerHTML =
-          "<img class='real-task-image' src='" + realTask.image + "' alt='" + realTask.alt + "'>" +
-          "<div class='dialog-progress'>Frage " + (currentStep + 1) + " von " + realTask.steps.length + "</div>" +
+        const step = realTask.steps[stepIndex];
+        const stepElement = document.createElement("section");
+        stepElement.className = "dialog-step";
+        stepElement.innerHTML =
+          "<div class='dialog-progress'>Frage " + (stepIndex + 1) + " von " + realTask.steps.length + "</div>" +
           "<p class='dialog-question'>" + step.question + "</p>" +
           "<div class='answer-list'>" +
           step.answers.map((answer, index) =>
             "<button class='answer-button' type='button' data-answer='" + index + "'>" + answer + "</button>"
           ).join("") +
           "</div><p class='dialog-feedback' aria-live='polite'></p>";
+        history.appendChild(stepElement);
 
-        container.querySelectorAll(".answer-button").forEach((button) => {
+        stepElement.querySelectorAll(".answer-button").forEach((button) => {
           button.addEventListener("click", () => {
             const selected = Number(button.dataset.answer);
-            const feedback = container.querySelector(".dialog-feedback");
+            const feedback = stepElement.querySelector(".dialog-feedback");
 
             if (selected !== step.correct) {
               button.classList.add("wrong");
@@ -696,21 +717,23 @@
               return;
             }
 
-            container.querySelectorAll(".answer-button").forEach((item) => {
+            stepElement.querySelectorAll(".answer-button").forEach((item) => {
               item.disabled = true;
             });
             button.classList.add("correct");
-            feedback.textContent = "Richtig! Gleich kommt die nächste Frage.";
+            stepElement.classList.add("completed");
+            feedback.textContent = "Richtig! Diese Frage und ihre Lösung bleiben stehen.";
 
             window.setTimeout(() => {
-              currentStep += 1;
-              renderStep();
-            }, 700);
+              appendStep(stepIndex + 1);
+              const nextStep = history.lastElementChild;
+              if (nextStep) nextStep.scrollIntoView({ behavior: "smooth", block: "nearest" });
+            }, 450);
           });
         });
       }
 
-      renderStep();
+      appendStep(0);
     }
 
     function openTask(taskId) {
@@ -723,7 +746,7 @@
       document.getElementById("help-2").innerHTML = task.help2;
       document.getElementById("solution").innerHTML = task.solution;
       document.getElementById("model-solution").innerHTML = task.model;
-      renderRealTask(task.realTask);
+      renderRealTask(window.realTasks?.[taskId] || task.realTask);
       closeAllHelpPanels();
       navigateTo("aufgabe");
     }
