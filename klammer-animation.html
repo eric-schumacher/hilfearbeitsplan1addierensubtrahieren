@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Wie rechnet man?</title>
+  <style>
+    :root{
+      --ink:#1b2430;
+      --paper:#eef4f8;
+      --good:#2d6a4f;
+      --bad:#a82828;
+      --shadow:0 10px 28px rgba(25,42,58,.10);
+      --cell:clamp(32px,4.25vw,58px);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    body{
+      font-family:"Segoe UI",Arial,sans-serif;
+      color:var(--ink);
+      background:var(--paper);
+      overflow:hidden;
+    }
+    .app{
+      min-height:100dvh;
+      display:grid;
+      grid-template-rows:auto 1fr auto;
+      gap:10px;
+      padding:clamp(10px,2vw,22px);
+    }
+    header{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:clamp(10px,1.5vh,18px);
+    }
+    h1{
+      margin:0;
+      font-size:clamp(28px,3.4vw,44px);
+      font-weight:800;
+    }
+    .task,.row{
+      display:grid;
+      grid-template-columns:repeat(21,var(--cell));
+      justify-content:center;
+      width:100%;
+      min-height:var(--cell);
+      position:relative;
+    }
+    .task{
+      width:min(calc(var(--cell)*21),96vw);
+      align-items:center;
+    }
+    .cell{
+      width:var(--cell);
+      height:var(--cell);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-family:"Courier New",Consolas,monospace;
+      font-size:calc(var(--cell)*.72);
+      font-weight:700;
+      line-height:1;
+      position:relative;
+      z-index:2;
+    }
+    .redMark::before, .blueMark::before{
+      content:"";
+      position:absolute;
+      inset:3px;
+      border-radius:9px;
+      animation:pulse 1s ease-in-out infinite;
+      z-index:-1;
+    }
+    .redMark::before{
+      background:rgba(217,65,65,.14);
+      outline:3px solid rgba(217,65,65,.9);
+    }
+    .blueMark::before{
+      background:rgba(47,111,214,.14);
+      outline:3px solid rgba(47,111,214,.9);
+    }
+    @keyframes pulse{50%{transform:scale(1.08)}}
+
+    main{
+      min-height:0;
+      display:flex;
+      justify-content:center;
+      align-items:flex-start;
+      padding-top:clamp(4px,1vh,14px);
+    }
+    .boardWrap{
+      position:relative;
+      width:min(calc(var(--cell)*21),96vw);
+      min-height:calc(var(--cell)*4.2);
+    }
+    .math-board{
+      width:100%;
+      display:flex;
+      flex-direction:column;
+      gap:calc(var(--cell)*.58);
+      align-items:center;
+    }
+    .fadeRow{
+      opacity:0;
+      transform:translateY(-8px);
+      transition:opacity 1s ease,transform 1s ease;
+    }
+    .fadeRow.show{opacity:1;transform:translateY(0)}
+    .hidden{opacity:0}
+    .equals{color:#425466}
+
+    .messageOverlay{
+      position:absolute;
+      inset:0;
+      display:grid;
+      place-items:center;
+      pointer-events:none;
+      z-index:30;
+    }
+    .message{
+      max-width:min(780px,88vw);
+      padding:18px 24px;
+      border-radius:18px;
+      background:rgba(255,255,255,.97);
+      box-shadow:0 14px 35px rgba(26,42,57,.16);
+      text-align:center;
+      font-size:clamp(20px,2.4vw,30px);
+      line-height:1.45;
+      font-weight:700;
+      white-space:pre-line;
+      opacity:0;
+      transform:translateY(8px) scale(.98);
+      transition:opacity .65s ease,transform .65s ease;
+    }
+    .message.show{opacity:1;transform:translateY(0) scale(1)}
+
+    .dropPiece{
+      position:absolute;
+      z-index:15;
+      pointer-events:none;
+      font-family:"Courier New",Consolas,monospace;
+      font-weight:700;
+      font-size:calc(var(--cell)*.72);
+      width:var(--cell);
+      height:var(--cell);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      transition:transform 2.8s ease-in-out,opacity .7s ease;
+    }
+
+    footer{display:grid;justify-items:center;gap:10px;min-height:104px}
+    .questionArea{
+      display:grid;
+      gap:10px;
+      justify-items:center;
+      transition:opacity .5s ease,transform .5s ease;
+    }
+    .questionArea.hide{opacity:0;transform:translateY(18px);pointer-events:none}
+    .question{font-size:clamp(21px,2.4vw,30px);font-weight:800}
+    .options{
+      width:min(1180px,96vw);
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:10px;
+    }
+    .optionBtn,.actionBtn{
+      font:inherit;
+      font-size:clamp(15px,1.5vw,21px);
+      font-weight:700;
+      min-height:52px;
+      padding:13px 12px;
+      border-radius:14px;
+      border:2px solid rgba(35,52,69,.12);
+      background:rgba(255,255,255,.92);
+      box-shadow:var(--shadow);
+      cursor:pointer;
+      transition:transform .18s ease,background .2s ease,border-color .2s ease,opacity .2s ease;
+      white-space:nowrap;
+    }
+    .optionBtn:hover,.actionBtn:hover{transform:translateY(-1px)}
+    .optionBtn.correct{background:#dff4e7;border-color:#76b98f;color:var(--good)}
+    .optionBtn.wrong{background:#fde6e6;border-color:#d9a0a0;color:var(--bad)}
+    .actionBtn{display:none;min-width:220px;background:#24384d;color:#fff;margin:auto}
+
+    .correctFlash{
+      position:absolute;
+      bottom:0;
+      left:50%;
+      transform:translateX(-50%) scale(.95);
+      padding:10px 20px;
+      border-radius:999px;
+      background:#dff4e7;
+      color:var(--good);
+      font-size:clamp(20px,2.4vw,30px);
+      font-weight:800;
+      box-shadow:var(--shadow);
+      opacity:0;
+      transition:opacity .25s ease,transform .25s ease;
+      z-index:40;
+    }
+    .correctFlash.show{opacity:1;transform:translateX(-50%) scale(1)}
+
+    .finishedText{
+      display:none;
+      font-size:clamp(22px,2.5vw,32px);
+      font-weight:800;
+      text-align:center;
+      padding:10px 18px;
+    }
+
+    @media (max-width:900px){
+      :root{--cell:clamp(28px,4.35vw,42px)}
+      .optionBtn{font-size:clamp(12px,1.7vw,16px);padding:10px 6px}
+    }
+    @media (max-height:650px){
+      :root{--cell:clamp(27px,5.7vh,39px)}
+      .app{padding:7px 10px;gap:4px}
+      header{gap:4px}
+      h1{font-size:clamp(22px,4vh,30px)}
+      main{padding-top:0}
+      .math-board{gap:calc(var(--cell)*.35)}
+      footer{min-height:76px;gap:5px}
+      .questionArea{gap:5px}
+      .question{font-size:clamp(17px,3vh,23px)}
+      .optionBtn,.actionBtn{min-height:42px;padding:8px 7px}
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Wie rechnet man?</h1>
+      <div class="task" id="taskLine" aria-live="polite"></div>
+    </header>
+
+    <main>
+      <div class="boardWrap" id="boardWrap">
+        <div class="math-board" id="mathBoard"></div>
+        <div class="messageOverlay"><div class="message" id="messageBox"></div></div>
+        <div class="correctFlash" id="correctFlash">Richtig!</div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="questionArea" id="questionArea">
+        <div class="question">Mit was beginnen wir?</div>
+        <div class="options" id="options"></div>
+      </div>
+      <button class="actionBtn" id="continueBtn" type="button">Weiter</button>
+      <button class="actionBtn" id="nextTaskBtn" type="button">Nächste Aufgabe</button>
+      <div class="finishedText" id="finishedText">Fertig</div>
+    </footer>
+  </div>
+
+  <script>
+  (()=>{
+    const wait=ms=>new Promise(r=>setTimeout(r,ms));
+    const taskLine=document.getElementById('taskLine');
+    const mathBoard=document.getElementById('mathBoard');
+    const boardWrap=document.getElementById('boardWrap');
+    const messageBox=document.getElementById('messageBox');
+    const correctFlash=document.getElementById('correctFlash');
+    const questionArea=document.getElementById('questionArea');
+    const options=document.getElementById('options');
+    const continueBtn=document.getElementById('continueBtn');
+    const nextTaskBtn=document.getElementById('nextTaskBtn');
+    const finishedText=document.getElementById('finishedText');
+
+    let taskIndex=0;
+    let running=false;
+    let current={};
+
+    const tasks=[
+      {
+        aria:'23 minus Klammer 50 minus 35 Klammer',
+        top:[
+          ['src2','2',3],['src3','3',4],['srcMinus','−',6],
+          ['br1a','(',8,'bracket'],['x50a','5',9],['x50b','0',10],['xminus','−',12],['x35a','3',14],['x35b','5',15],['br1b',')',16,'bracket']
+        ],
+        row2:[
+          ['eq2','=',2,'equals'],['t2','2',4,'hidden'],['t3','3',5,'hidden'],['tMinus','−',7,'hidden'],
+          ['r1','1',11,'hidden'],['r5','5',12,'hidden']
+        ],
+        row3:[['eq3','=',2,'equals'],['final8','8',8]],
+        options:[
+          ['23 - 50',false],['Klammer zuerst!',true],['Die Aufgabe ist nicht lösbar',false],['35 - 50',false]
+        ],
+        bracketGroups:[{ids:['br1a','br1b'],className:'redMark'}],
+        resultIds:['r1','r5'],
+        transfer:[['src2','t2','2'],['src3','t3','3'],['srcMinus','tMinus','−']],
+        row2MarkIds:['t2','t3','tMinus','r1','r5']
+      },
+      {
+        aria:'5 plus Klammer 18 plus 7 Klammer minus Klammer 14 minus 9 Klammer',
+        top:[
+          ['lead5','5',1],['leadPlus','+',3],
+          ['br2a','(',5,'bracket'],['a1','1',6],['a8','8',7],['aplus','+',9],['a7','7',11],['br2b',')',12,'bracket'],
+          ['middleMinus','−',14],
+          ['br3a','(',16,'bracket'],['b1','1',17],['b4','4',18],['bminus','−',19],['b9','9',20],['br3b',')',21,'bracket']
+        ],
+        row2:[
+          ['eq22','=',1,'equals'],
+          ['lead5Target','5',3,'hidden'],['leadPlusTarget','+',5,'hidden'],
+          ['l2','2',8,'hidden'],['l5','5',9,'hidden'],
+          ['middleMinusTarget','−',14,'hidden'],['right5','5',19,'hidden']
+        ],
+        row3:[
+          ['eq23','=',1,'equals'],
+          ['thirty3','3',6],['thirty0','0',7],
+          ['row3Minus','−',10,'hidden'],['row3Right5','5',12,'hidden']
+        ],
+        row4:[['eq24','=',1,'equals'],['f2','2',9],['f5','5',10]],
+        options:[
+          ['5 + 18',false],['Beide Klammern zuerst!',true],['18 + 7',false],['14 - 9',false]
+        ],
+        bracketGroups:[
+          {ids:['br2a','br2b'],className:'redMark'},
+          {ids:['br3a','br3b'],className:'blueMark'}
+        ],
+        resultIds:['l2','l5','right5'],
+        transfer:[
+          ['lead5','lead5Target','5'],['leadPlus','leadPlusTarget','+'],['middleMinus','middleMinusTarget','−']
+        ],
+        row2MarkIds:['lead5Target','leadPlusTarget','l2','l5','middleMinusTarget','right5'],
+        firstCalcIds:['lead5Target','leadPlusTarget','l2','l5'],
+        secondTransfer:[['middleMinusTarget','row3Minus','−'],['right5','row3Right5','5']],
+        row3MarkIds:['thirty3','thirty0','row3Minus','row3Right5']
+      }
+    ];
+
+    function cellHTML([id,text,col,extra='']){
+      return `<span class="cell ${extra}" id="${id}" style="grid-column:${col}">${text}</span>`;
+    }
+
+    function renderTask(index){
+      taskIndex=index;
+      running=false;
+      const t=tasks[index];
+      taskLine.setAttribute('aria-label',t.aria);
+      taskLine.innerHTML=t.top.map(cellHTML).join('');
+      mathBoard.innerHTML=`
+        <div class="row fadeRow" id="row2">${t.row2.map(cellHTML).join('')}</div>
+        <div class="row fadeRow" id="row3">${t.row3.map(cellHTML).join('')}</div>
+        ${t.row4 ? `<div class="row fadeRow" id="row4">${t.row4.map(cellHTML).join('')}</div>` : ''}`;
+      options.innerHTML=t.options.map(([label,correct])=>`<button class="optionBtn" type="button" data-correct="${correct}">${label}</button>`).join('');
+      questionArea.style.display='grid';
+      questionArea.classList.remove('hide');
+      continueBtn.style.display='none';
+      nextTaskBtn.style.display='none';
+      finishedText.style.display='none';
+      hideMessage();
+
+      current={
+        task:t,
+        row2:document.getElementById('row2'),
+        row3:document.getElementById('row3'),
+        row4:document.getElementById('row4'),
+        bracketGroups:t.bracketGroups.map(group=>({
+          className:group.className,
+          elements:group.ids.map(id=>document.getElementById(id))
+        })),
+        results:t.resultIds.map(id=>document.getElementById(id)),
+        row2Marks:t.row2MarkIds.map(id=>document.getElementById(id)),
+        firstCalcMarks:(t.firstCalcIds||[]).map(id=>document.getElementById(id)),
+        row3Marks:(t.row3MarkIds||[]).map(id=>document.getElementById(id))
+      };
+
+      [...options.querySelectorAll('.optionBtn')].forEach(btn=>btn.addEventListener('click',()=>handleAnswer(btn)));
+    }
+
+    function showMessage(text){
+      messageBox.textContent=text;
+      messageBox.classList.add('show');
+    }
+    function hideMessage(){messageBox.classList.remove('show')}
+    async function messageSequence(text,visibleMs){
+      showMessage(text);
+      await wait(visibleMs);
+      hideMessage();
+      await wait(900);
+    }
+    function markBrackets(on){
+      current.bracketGroups.forEach(group=>{
+        group.elements.forEach(el=>el.classList.toggle(group.className,on));
+      });
+    }
+
+    function waitForContinue(){
+      return new Promise(resolve=>{
+        continueBtn.style.display='block';
+        const done=()=>{
+          continueBtn.style.display='none';
+          continueBtn.removeEventListener('click',done);
+          resolve();
+        };
+        continueBtn.addEventListener('click',done);
+      });
+    }
+
+    function getCenter(el){
+      const r=el.getBoundingClientRect();
+      const wrap=boardWrap.getBoundingClientRect();
+      return {x:r.left-wrap.left+r.width/2,y:r.top-wrap.top+r.height/2};
+    }
+
+    function launchDrop(sourceEl,targetEl,char){
+      return new Promise(async resolve=>{
+        const s=getCenter(sourceEl),e=getCenter(targetEl);
+        const copy=document.createElement('div');
+        copy.className='dropPiece';
+        copy.textContent=char;
+        copy.style.left=(s.x-sourceEl.offsetWidth/2)+'px';
+        copy.style.top=(s.y-sourceEl.offsetHeight/2)+'px';
+        boardWrap.appendChild(copy);
+        await wait(80);
+        copy.style.transform=`translate(${e.x-s.x}px,${e.y-s.y}px)`;
+        await wait(2900);
+        copy.style.opacity='0';
+        await wait(350);
+        copy.remove();
+        resolve();
+      });
+    }
+
+    async function dropCopiesTogether(items){
+      await Promise.all(items.map(([sourceId,targetId,char])=>launchDrop(
+        document.getElementById(sourceId),document.getElementById(targetId),char
+      )));
+      items.forEach(([,targetId])=>document.getElementById(targetId).classList.remove('hidden'));
+    }
+
+    async function runAnimation(){
+      markBrackets(true);
+      current.row2.classList.add('show');
+      await wait(3000);
+
+      current.results.forEach(el=>el.classList.remove('hidden'));
+
+      // Die Pause vor dem ersten Hinweis ist bewusst 2,5-mal so lang wie ursprünglich.
+      await wait(4000);
+
+      await messageSequence('Alles was wir nicht verändert haben, wird in die nächste Zeile übertragen',5000);
+
+      showMessage(`MERKSATZ: Was noch nicht an der Reihe ist,\nschreibst du ab, so wie es ist!\nIn die nächste Zeile kommt es dann,\nweil man dort schön weiterrechnen kann!`);
+      await waitForContinue();
+      hideMessage();
+      await wait(900);
+
+      await dropCopiesTogether(current.task.transfer);
+      await wait(1300);
+
+      markBrackets(false);
+
+      if(taskIndex===0){
+        await messageSequence('Jetzt rechnen wir in der neuen Zeile weiter.',3400);
+        current.row2Marks.forEach(el=>el.classList.add('redMark'));
+        await wait(3200);
+        current.row2Marks.forEach(el=>el.classList.remove('redMark'));
+        current.row3.classList.add('show');
+        await wait(1400);
+        nextTaskBtn.style.display='block';
+      }else{
+        // In Aufgabe 2 wird ab der zweiten Zeile bewusst Schritt für Schritt weitergerechnet.
+        await messageSequence('Jetzt rechnen wir zuerst 5 + 25.',3400);
+        current.firstCalcMarks.forEach(el=>el.classList.add('redMark'));
+        await wait(3200);
+        current.firstCalcMarks.forEach(el=>el.classList.remove('redMark'));
+
+        // 30 kommt als neuer Rechenschritt mittig in die nächste Zeile.
+        current.row3.classList.add('show');
+        await wait(2400);
+
+        // Das noch unveränderte „− 5“ wird anschließend aus der Zeile darüber heruntergezogen.
+        await dropCopiesTogether(current.task.secondTransfer);
+        await wait(1600);
+
+        await messageSequence('Jetzt rechnen wir mit 30 − 5 weiter.',3200);
+        current.row3Marks.forEach(el=>el.classList.add('redMark'));
+        await wait(3200);
+        current.row3Marks.forEach(el=>el.classList.remove('redMark'));
+
+        current.row4.classList.add('show');
+        await wait(1400);
+
+        questionArea.style.display='none';
+        continueBtn.style.display='none';
+        nextTaskBtn.style.display='none';
+        finishedText.style.display='block';
+      }
+      running=false;
+    }
+
+    async function handleAnswer(btn){
+      if(running||btn.disabled)return;
+      if(btn.dataset.correct==='true'){
+        running=true;
+        [...options.querySelectorAll('.optionBtn')].forEach(b=>b.disabled=true);
+        btn.classList.add('correct');
+        correctFlash.classList.add('show');
+        await wait(1200);
+        correctFlash.classList.remove('show');
+        questionArea.classList.add('hide');
+        await wait(600);
+        questionArea.style.display='none';
+        await runAnimation();
+      }else{
+        btn.classList.add('wrong');
+        await wait(650);
+        btn.classList.remove('wrong');
+      }
+    }
+
+    nextTaskBtn.addEventListener('click',()=>renderTask(1));
+
+    renderTask(0);
+  })();
+  </script>
+</body>
+</html>
+
+
