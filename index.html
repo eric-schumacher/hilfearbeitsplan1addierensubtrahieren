@@ -384,6 +384,14 @@
       .task-card { border-radius: 22px; }
       .help-panel { padding: 18px 20px; }
     }
+
+    .part-label { display: block; margin-bottom: 10px; font-weight: 700; }
+    #task-part { width: 100%; max-width: 100%; padding: 12px; border: 2px solid var(--border); border-radius: 12px; font: inherit; background: white; color: var(--text); }
+    #task-prompt { margin-top: 20px; overflow-wrap: anywhere; }
+    .variant-left { border-left: 6px solid #d88000; padding-left: 12px; }
+    .variant-right { border-left: 6px solid #609b20; padding-left: 12px; }
+    .next-hint { margin-top: 18px; }
+    [hidden] { display: none !important; }
   </style>
 </head>
 <body>
@@ -461,8 +469,8 @@
         <div class="button-list">
           <a class="task-button" href="klammer-animation.html">Animation</a>
           <a class="video-button" href="https://www.youtube.com/watch?v=b5-s_d5ZimM" target="_blank" rel="noopener noreferrer">Hilfevideo</a>
-          <button class="task-button" type="button" data-task="klammer-4">S. 65 Nr. 4 links</button>
-          <button class="task-button" type="button" data-task="klammer-5">S. 65 Nr. 5 links</button>
+          <button class="task-button" type="button" data-task="klammer-4">S. 65 Nr. 4 links (orange)</button>
+          <button class="task-button" type="button" data-task="klammer-5">S. 65 Nr. 5 links (orange)</button>
         </div>
       </div>
     </section>
@@ -474,8 +482,8 @@
         <div class="button-list">
           <a class="video-button" href="https://www.youtube.com/watch?v=YZOuuN7baHM" target="_blank" rel="noopener noreferrer">Hilfevideo</a>
           <button class="task-button" type="button" data-task="gesetz-1">S. 67 Nr. 1</button>
-          <button class="task-button" type="button" data-task="gesetz-2">S. 68 Nr. 2</button>
-          <button class="task-button" type="button" data-task="gesetz-3">S. 68 Nr. 3</button>
+          <button class="task-button" type="button" data-task="gesetz-2">S. 67 Nr. 2</button>
+          <button class="task-button" type="button" data-task="gesetz-3">S. 67 Nr. 3</button>
         </div>
       </div>
     </section>
@@ -486,7 +494,9 @@
         <h2 id="task-title" class="chapter-title">Aufgabe</h2>
 
         <article class="task-card">
-          <p class="task-label">Beispielaufgabe</p>
+          <p class="task-label" id="task-label">Aufgabe aus dem Buch</p>
+          <label class="part-label" for="task-part">Teilaufgabe auswählen</label>
+          <select id="task-part"></select>
           <div id="task-prompt" class="task-prompt"></div>
         </article>
 
@@ -497,10 +507,10 @@
           <button class="reveal-button" type="button" data-panel="help-2" aria-expanded="false">Hilfe 2</button>
           <div id="help-2" class="help-panel"></div>
 
-          <button class="reveal-button" type="button" data-panel="solution" aria-expanded="false">Lösung</button>
+          <button class="reveal-button" type="button" data-panel="solution" aria-expanded="false">So prüfst du deinen Weg</button>
           <div id="solution" class="help-panel solution-panel"></div>
 
-          <button class="reveal-button" type="button" data-panel="model-solution" aria-expanded="false">Musterlösung</button>
+          <button class="reveal-button" type="button" data-panel="model-solution" aria-expanded="false">Typischer Stolperstein</button>
           <div id="model-solution" class="help-panel"></div>
 
           <button class="reveal-button" type="button" data-panel="real-task" aria-expanded="false">Schritt für Schritt zur richtigen Lösung!</button>
@@ -514,141 +524,7 @@
 
   <script src="real-task-data.js"></script>
   <script>
-    const tasks = {
-      "kopf-1": {
-        title: "S. 54 Nr. 1 – Kopfrechnen",
-        prompt: "Addiere im Kopf: <strong>47 + 36</strong>",
-        realTask: {
-          image: "data:image/jpeg;base64,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",
-          alt: "Schulbuchaufgabe S. 54 Nr. 1 a: 20 plus 54",
-          steps: [
-            {
-              question: "Welche Zahl zerlegen wir am besten, damit du leichter rechnen kannst?",
-              answers: ["20", "54", "74"],
-              correct: 1,
-              hint: "Überlege: 20 ist bereits ein glatter Zehner. Die andere Zahl lässt sich in Zehner und Einer zerlegen."
-            },
-            {
-              question: "Wie zerlegst du 54 sinnvoll in Zehner und Einer?",
-              answers: ["50 + 4", "40 + 14", "5 + 4"],
-              correct: 0,
-              hint: "In 54 stecken 5 Zehner und 4 Einer."
-            },
-            {
-              question: "Was rechnest du nun zuerst?",
-              answers: ["20 + 4", "20 + 50", "54 - 20"],
-              correct: 1,
-              hint: "Addiere zuerst die Zehner miteinander."
-            },
-            {
-              question: "20 + 50 ergibt ...",
-              answers: ["60", "70", "80"],
-              correct: 1,
-              hint: "Zwei Zehner plus fünf Zehner sind sieben Zehner."
-            },
-            {
-              question: "Jetzt fehlen noch die 4 Einer. Was ist 70 + 4?",
-              answers: ["74", "66", "704"],
-              correct: 0,
-              hint: "Füge zu 70 noch vier Einer hinzu."
-            }
-          ],
-          result: "20 + 54 = 74"
-        },
-        help1: "Zerlege die zweite Zahl sinnvoll in Zehner und Einer.",
-        help2: "Rechne schrittweise:<div class='math-line calculation-steps'><span>47 + 30 = ___</span><span>___ + 6 = ___</span></div>",
-        solution: "83",
-        model: "Zerlege <strong>36</strong> in <strong>30 + 6</strong>.<div class='math-line calculation-steps'><span>47 + 36</span><span>= 47 + 30 + 6</span><span>= 77 + 6</span><span>= 83</span></div>Du addierst also zuerst die Zehner und danach die Einer."
-      },
-      "kopf-2": {
-        title: "S. 54 Nr. 2 – Kopfrechnen",
-        prompt: "Subtrahiere im Kopf: <strong>73 − 28</strong>",
-        help1: "Zerlege 28 in 20 und 8.",
-        help2: "Rechne in zwei Schritten:<div class='math-line calculation-steps'><span>73 − 20 = ___</span><span>___ − 8 = ___</span></div>",
-        solution: "45",
-        model: "Zerlege <strong>28</strong> in <strong>20 + 8</strong>.<div class='math-line calculation-steps'><span>73 − 28</span><span>= 73 − 20 − 8</span><span>= 53 − 8</span><span>= 45</span></div>Zuerst werden die Zehner, danach die Einer abgezogen."
-      },
-      "kopf-3": {
-        title: "S. 54 Nr. 3 – Kopfrechnen",
-        prompt: "Berechne im Kopf: <strong>100 − 37</strong>",
-        help1: "Zerlege 37 in 30 und 7.",
-        help2: "Rechne zuerst bis zum nächsten Zehner:<div class='math-line calculation-steps'><span>100 − 30 = ___</span><span>___ − 7 = ___</span></div>",
-        solution: "63",
-        model: "Zerlege <strong>37</strong> in <strong>30 + 7</strong>.<div class='math-line calculation-steps'><span>100 − 37</span><span>= 100 − 30 − 7</span><span>= 70 − 7</span><span>= 63</span></div>Durch die Zerlegung lässt sich die Aufgabe leichter im Kopf rechnen."
-      },
-      "add-1": {
-        title: "S. 56 Nr. 1 – schriftliches Addieren",
-        prompt: "Addiere schriftlich: <strong>3487 + 2756</strong>",
-        help1: "Schreibe beide Zahlen stellengerecht untereinander: Einer unter Einer, Zehner unter Zehner und so weiter. Beginne rechts bei den Einern.",
-        help2: "Starte bei den Einern:<div class='math-line'>7 + 6 = 13</div>Schreibe die 3 und übertrage 1 in die Zehnerspalte. Rechne danach Spalte für Spalte weiter.",
-        solution: "6243",
-        model: "<strong>Stellengerecht untereinander:</strong><pre class='calculation'>   3487\n+  2756\n    <span class='carry-digits'>111</span> ← Überträge\n-------\n   6243</pre>Die kleinen <strong>1en direkt über der Ergebnislinie sind die Überträge</strong>.<br><strong>Einer:</strong> 7 + 6 = 13. Schreibe 3, übertrage 1.<br><strong>Zehner:</strong> 8 + 5 + 1 = 14. Schreibe 4, übertrage 1.<br><strong>Hunderter:</strong> 4 + 7 + 1 = 12. Schreibe 2, übertrage 1.<br><strong>Tausender:</strong> 3 + 2 + 1 = 6."
-      },
-      "add-2": {
-        title: "S. 57 Nr. 2 – schriftliches Addieren",
-        prompt: "Berechne: <strong>2638 + 475</strong>",
-        help1: "Schreibe die Zahlen zuerst stellengerecht untereinander. Die 5 muss unter der 8 stehen.",
-        help2: "Beginne rechts:<div class='math-line'>8 + 5 = 13</div>Schreibe 3, übertrage 1 und arbeite dich nach links vor.",
-        solution: "3113",
-        model: "<strong>Stellengerecht untereinander:</strong><pre class='calculation'>   2638\n+   475\n    <span class='carry-digits'>111</span> ← Überträge\n-------\n   3113</pre>Die kleinen <strong>1en direkt über der Ergebnislinie sind die Überträge</strong>.<br><strong>Einer:</strong> 8 + 5 = 13. Schreibe 3, übertrage 1.<br><strong>Zehner:</strong> 3 + 7 + 1 = 11. Schreibe 1, übertrage 1.<br><strong>Hunderter:</strong> 6 + 4 + 1 = 11. Schreibe 1, übertrage 1.<br><strong>Tausender:</strong> 2 + 1 = 3."
-      },
-      "sub-1": {
-        title: "S. 60 Nr. 1 – schriftliches Subtrahieren",
-        prompt: "Subtrahiere schriftlich: <strong>8642 − 3578</strong>",
-        help1: "Schreibe beide Zahlen stellengerecht untereinander und beginne rechts bei den Einern.",
-        help2: "Bei den Einern kannst du 8 nicht direkt von 2 abziehen. Entbündele einen Zehner:<div class='math-line'>12 − 8 = ___</div>Arbeite danach Spalte für Spalte weiter und beachte die veränderten Stellen. ",
-        solution: "5064",
-        model: "<strong>Stellengerecht untereinander:</strong><pre class='calculation'>   8  5 13 12   ← nach dem Entbündeln\n      8  6  4  2\n−     3  5  7  8\n----------------\n      5  0  6  4</pre>Die Zahlen über der Rechnung zeigen das <strong>Entbündeln (Ausleihen)</strong>.<br><strong>Einer:</strong> Aus 2 Einern werden 12 Einer. 12 − 8 = 4.<br><strong>Zehner:</strong> Aus 4 Zehnern bleiben zunächst 3; durch weiteres Entbündeln werden daraus 13 Zehner. 13 − 7 = 6.<br><strong>Hunderter:</strong> Es bleiben 5 Hunderter. 5 − 5 = 0.<br><strong>Tausender:</strong> 8 − 3 = 5."
-      },
-      "sub-2": {
-        title: "S. 61 Nr. 2 – schriftliches Subtrahieren",
-        prompt: "Berechne: <strong>5043 − 2876</strong>",
-        help1: "Schreibe die Zahlen stellengerecht untereinander. Achte besonders auf die 0 in der Hunderterstelle.",
-        help2: "Beginne bei den Einern. Für die Zehnerspalte musst du über die 0 hinweg entbündeln. Notiere die veränderten Stellen sorgfältig, bevor du weiterrechnest.",
-        solution: "2167",
-        model: "<strong>Stellengerecht untereinander:</strong><pre class='calculation'>   4  9 13 13   ← nach dem Entbündeln\n      5  0  4  3\n−     2  8  7  6\n----------------\n      2  1  6  7</pre>Die Zahlen über der Rechnung zeigen das <strong>Entbündeln über die 0 hinweg</strong>.<br><strong>Einer:</strong> Aus 3 Einern werden 13 Einer. 13 − 6 = 7.<br><strong>Zehner:</strong> Nach dem ersten Entbündeln bleiben 3 Zehner. Über die 0 hinweg wird weiter entbündelt; daraus werden 13 Zehner. 13 − 7 = 6.<br><strong>Hunderter:</strong> Es bleiben 9 Hunderter. 9 − 8 = 1.<br><strong>Tausender:</strong> Es bleiben 4 Tausender. 4 − 2 = 2."
-      },
-      "klammer-4": {
-        title: "S. 65 Nr. 4 links – Klammern",
-        prompt: "Berechne mit und ohne Klammer:<br><strong>a) 40 − 12 + 5</strong><br><strong>b) 40 − (12 + 5)</strong>",
-        help1: "Ohne Klammer rechnest du von links nach rechts. Mit Klammer wird zuerst der Ausdruck in der Klammer berechnet.",
-        help2: "Setze so an:<div class='math-line calculation-steps'><span>a) 40 − 12 + 5</span><span>= 28 + 5</span><span>= ___</span></div><div class='math-line calculation-steps'><span>b) Zuerst die Klammer:</span><span>12 + 5 = ___</span></div>",
-        solution: "a) 33 &nbsp;&nbsp;&nbsp; b) 23",
-        model: "<strong>a) Ohne Klammer:</strong><div class='math-line calculation-steps'><span>40 − 12 + 5</span><span>= 28 + 5</span><span>= 33</span></div><strong>b) Mit Klammer:</strong> Zuerst wird die Klammer berechnet.<div class='math-line calculation-steps'><span>40 − (12 + 5)</span><span>= 40 − 17</span><span>= 23</span></div>Die Klammer verändert also die Reihenfolge und damit auch das Ergebnis."
-      },
-      "klammer-5": {
-        title: "S. 65 Nr. 5 links – Klammern",
-        prompt: "Berechne: <strong>60 − (18 + 7) + (12 − 4)</strong>",
-        help1: "Berechne zuerst beide Klammern getrennt. Erst danach rechnest du den restlichen Ausdruck von links nach rechts.",
-        help2: "Die Klammern ergeben:<div class='math-line'>(18 + 7) = 25 &nbsp;&nbsp; und &nbsp;&nbsp; (12 − 4) = 8</div>Setze nun an: <strong>60 − 25 + 8 = ___</strong>",
-        solution: "43",
-        model: "Zuerst werden die Klammern berechnet:<div class='math-line calculation-steps'><span>(18 + 7) = 25</span><span>(12 − 4) = 8</span></div>Danach setzt du die Ergebnisse ein und rechnest von links nach rechts:<div class='math-line calculation-steps'><span>60 − 25 + 8</span><span>= 35 + 8</span><span>= 43</span></div>"
-      },
-      "gesetz-1": {
-        title: "S. 67 Nr. 1 – Rechengesetze",
-        prompt: "Berechne im Kopf. Vertauschen bringt Vorteile:<br><strong>18 + 27 + 12</strong>",
-        help1: "Suche zwei Summanden, die zusammen eine glatte Zehnerzahl ergeben.",
-        help2: "Vertausche die Summanden und setze so an:<div class='math-line calculation-steps'><span>18 + 12 + 27</span><span>= 30 + 27</span><span>= ___</span></div>",
-        solution: "57",
-        model: "Beim Addieren darfst du die Summanden vertauschen. 18 und 12 ergeben zusammen 30:<div class='math-line calculation-steps'><span>18 + 27 + 12</span><span>= 18 + 12 + 27</span><span>= 30 + 27</span><span>= 57</span></div>So wird die Rechnung im Kopf leichter."
-      },
-      "gesetz-2": {
-        title: "S. 68 Nr. 2 – Rechengesetze",
-        prompt: "Setze die Klammer neu und rechne vorteilhaft:<br><strong>(24 + 37) + 63</strong>",
-        help1: "Welche beiden Zahlen ergeben zusammen genau 100? Um diese beiden Summanden darfst du eine neue Klammer setzen.",
-        help2: "Setze so an:<div class='math-line calculation-steps'><span>24 + (37 + 63)</span><span>= 24 + 100</span><span>= ___</span></div>",
-        solution: "124",
-        model: "Beim Addieren dürfen Summanden neu zusammengefasst werden. 37 und 63 ergeben 100:<div class='math-line calculation-steps'><span>(24 + 37) + 63</span><span>= 24 + (37 + 63)</span><span>= 24 + 100</span><span>= 124</span></div>Der Wert der Summe verändert sich dadurch nicht."
-      },
-      "gesetz-3": {
-        title: "S. 68 Nr. 3 – Rechengesetze",
-        prompt: "Rechne vorteilhaft:<br><strong>26 + 49 + 74 + 51</strong>",
-        help1: "Suche Zahlenpaare, die zusammen jeweils 100 ergeben.",
-        help2: "Ordne die Summanden neu:<div class='math-line calculation-steps'><span>(26 + 74) + (49 + 51)</span><span>= 100 + 100</span><span>= ___</span></div>",
-        solution: "200",
-        model: "Du darfst die Summanden vertauschen und neu zusammenfassen:<div class='math-line calculation-steps'><span>26 + 49 + 74 + 51</span><span>= (26 + 74) + (49 + 51)</span><span>= 100 + 100</span><span>= 200</span></div>Durch die beiden Hunderterpaare lässt sich die Aufgabe besonders leicht berechnen."
-      }
-    };
+    const tasks = window.taskHelpData;
 
     const pages = document.querySelectorAll(".page");
     const menuButtons = document.querySelectorAll(".menu-button");
@@ -683,85 +559,69 @@
       });
     }
 
-    function renderRealTask(realTask) {
+    function renderGuidedHelp(part) {
       const container = document.getElementById("real-task-content");
-
-      if (!realTask) {
-        container.innerHTML = "<p style='text-align:center'><strong>Für diese Aufgabe fehlt noch der Schritt-für-Schritt-Weg.</strong></p>";
-        return;
-      }
-
-      container.innerHTML =
-        "<img class='real-task-image' src='" + realTask.image + "' alt='" + realTask.alt + "'>" +
-        "<div id='dialog-history'></div>";
-
-      const history = container.querySelector("#dialog-history");
-
-      function appendStep(stepIndex) {
-        if (stepIndex >= realTask.steps.length) {
-          const finished = document.createElement("div");
-          finished.className = "dialog-finished";
-          finished.innerHTML = "🎉 Super! Du hast die Aufgabe selbst gelöst.<br><br>" + realTask.result;
-          history.appendChild(finished);
-          finished.scrollIntoView({ behavior: "smooth", block: "nearest" });
-          return;
+      container.replaceChildren();
+      const intro = document.createElement("p");
+      intro.textContent = "Arbeite in deinem Heft. Öffne einen Tipp nach dem anderen und rechne jeweils selbst weiter.";
+      const history = document.createElement("div");
+      history.setAttribute("aria-live", "polite");
+      const next = document.createElement("button");
+      next.type = "button";
+      next.className = "answer-button next-hint";
+      let stepIndex = 0;
+      function appendStep() {
+        const step = document.createElement("section");
+        step.className = "dialog-step";
+        const progress = document.createElement("div");
+        progress.className = "dialog-progress";
+        progress.textContent = "Tipp " + (stepIndex + 1) + " von " + part.steps.length;
+        const text = document.createElement("p");
+        text.textContent = part.steps[stepIndex++];
+        step.append(progress, text);
+        history.append(step);
+        next.textContent = "Nächster Tipp";
+        if (stepIndex === part.steps.length) {
+          next.hidden = true;
+          const finish = document.createElement("p");
+          finish.className = "dialog-finished";
+          finish.textContent = "Jetzt bist du dran: Beende deine Rechnung im Heft und nutze anschließend die Hilfe zum Prüfen deines Wegs.";
+          history.append(finish);
         }
-
-        const step = realTask.steps[stepIndex];
-        const stepElement = document.createElement("section");
-        stepElement.className = "dialog-step";
-        stepElement.innerHTML =
-          "<div class='dialog-progress'>Frage " + (stepIndex + 1) + " von " + realTask.steps.length + "</div>" +
-          "<p class='dialog-question'>" + step.question + "</p>" +
-          "<div class='answer-list'>" +
-          step.answers.map((answer, index) =>
-            "<button class='answer-button' type='button' data-answer='" + index + "'>" + answer + "</button>"
-          ).join("") +
-          "</div><p class='dialog-feedback' aria-live='polite'></p>";
-        history.appendChild(stepElement);
-
-        stepElement.querySelectorAll(".answer-button").forEach((button) => {
-          button.addEventListener("click", () => {
-            const selected = Number(button.dataset.answer);
-            const feedback = stepElement.querySelector(".dialog-feedback");
-
-            if (selected !== step.correct) {
-              button.classList.add("wrong");
-              feedback.textContent = "Noch nicht ganz. " + step.hint;
-              return;
-            }
-
-            stepElement.querySelectorAll(".answer-button").forEach((item) => {
-              item.disabled = true;
-            });
-            button.classList.add("correct");
-            stepElement.classList.add("completed");
-            feedback.textContent = "Richtig! Diese Frage und ihre Lösung bleiben stehen.";
-
-            window.setTimeout(() => {
-              appendStep(stepIndex + 1);
-              const nextStep = history.lastElementChild;
-              if (nextStep) nextStep.scrollIntoView({ behavior: "smooth", block: "nearest" });
-            }, 450);
-          });
-        });
       }
+      next.addEventListener("click", appendStep);
+      container.append(intro, history, next);
+      appendStep();
+    }
 
-      appendStep(0);
+    function showPart(task, index) {
+      const part = task.parts[index];
+      document.getElementById("task-prompt").textContent = part.label + "  " + part.expression;
+      document.getElementById("help-1").textContent = part.strategy;
+      document.getElementById("help-2").textContent = part.start;
+      document.getElementById("solution").textContent = part.check;
+      document.getElementById("model-solution").textContent = part.trap;
+      renderGuidedHelp(part);
+      closeAllHelpPanels();
     }
 
     function openTask(taskId) {
       const task = tasks[taskId];
       if (!task) return;
-
       document.getElementById("task-title").textContent = task.title;
-      document.getElementById("task-prompt").innerHTML = task.prompt;
-      document.getElementById("help-1").innerHTML = task.help1;
-      document.getElementById("help-2").innerHTML = task.help2;
-      document.getElementById("solution").innerHTML = task.solution;
-      document.getElementById("model-solution").innerHTML = task.model;
-      renderRealTask(window.realTasks?.[taskId] || task.realTask);
-      closeAllHelpPanels();
+      const label = document.getElementById("task-label");
+      label.textContent = task.variant === "left" ? "Aufgabe aus dem Buch · links / orange" : task.variant === "right" ? "Aufgabe aus dem Buch · rechts / grün" : "Aufgabe aus dem Buch";
+      label.className = "task-label" + (task.variant ? " variant-" + task.variant : "");
+      const select = document.getElementById("task-part");
+      select.replaceChildren();
+      task.parts.forEach((part, index) => {
+        const option = document.createElement("option");
+        option.value = String(index);
+        option.textContent = part.label + "  " + part.expression;
+        select.append(option);
+      });
+      select.onchange = () => showPart(task, Number(select.value));
+      showPart(task, 0);
       navigateTo("aufgabe");
     }
 
@@ -787,3 +647,4 @@
   </script>
 </body>
 </html>
+
