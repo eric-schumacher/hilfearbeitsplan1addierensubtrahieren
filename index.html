@@ -507,6 +507,9 @@
           <button class="reveal-button" type="button" data-panel="help-2" aria-expanded="false">Hilfe 2</button>
           <div id="help-2" class="help-panel"></div>
 
+          <button class="reveal-button" type="button" data-panel="help-3" aria-expanded="false">Hilfe 3 – Ein Teilschritt ist vorgerechnet</button>
+          <div id="help-3" class="help-panel"></div>
+
 
           <button class="reveal-button" type="button" data-panel="real-task" aria-expanded="false">Schritt für Schritt zur richtigen Lösung!</button>
           <div id="real-task" class="help-panel">
@@ -594,6 +597,7 @@
       document.getElementById("task-prompt").textContent = part.label + "  " + part.expression;
       document.getElementById("help-1").textContent = part.strategy;
       document.getElementById("help-2").textContent = part.start;
+      document.getElementById("help-3").textContent = part.partial;
       renderGuidedHelp(part);
       closeAllHelpPanels();
     }

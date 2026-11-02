@@ -1,4 +1,4 @@
-// Aufgaben mit den Originalzahlen. Tipps enthalten keine fertigen Ergebnisse.
+// Aufgaben mit Originalzahlen, gestuften Tipps und einem vorgerechneten Teilschritt.
 window.taskHelpData = {
   "kopf-1": {
     "title": "S. 54 Nr. 1 – Kopfrechnen",
@@ -16,7 +16,8 @@ window.taskHelpData = {
           "Zerlege 54 in 50 + 4. Beginne mit 20 + 50. Notiere dein Zwischenergebnis selbst.",
           "Nimm dein eigenes Zwischenergebnis. Rechne nun + 4. Bei Minus ziehst du auch diesen zweiten Teil ab.",
           "Prüfe: Hast du insgesamt 54 addiert?"
-        ]
+        ],
+        "partial": "Ein erster Teilschritt ist ausgerechnet: 20 + 50 = 70. Von 54 fehlen noch 4 Einer. Rechne selbst weiter: 70 + 4 = □."
       },
       {
         "label": "b)",
@@ -30,7 +31,8 @@ window.taskHelpData = {
           "Zerlege 42 in 40 + 2. Beginne mit 35 + 40. Notiere dein Zwischenergebnis selbst.",
           "Nimm dein eigenes Zwischenergebnis. Rechne nun + 2. Bei Minus ziehst du auch diesen zweiten Teil ab.",
           "Prüfe: Hast du insgesamt 42 addiert?"
-        ]
+        ],
+        "partial": "Ein erster Teilschritt ist ausgerechnet: 35 + 40 = 75. Von 42 fehlen noch 2 Einer. Rechne selbst weiter: 75 + 2 = □."
       },
       {
         "label": "c)",
@@ -44,7 +46,8 @@ window.taskHelpData = {
           "Zerlege 54 in 50 + 4. Beginne mit 46 + 50. Notiere dein Zwischenergebnis selbst.",
           "Nimm dein eigenes Zwischenergebnis. Rechne nun + 4. Bei Minus ziehst du auch diesen zweiten Teil ab.",
           "Prüfe: Hast du insgesamt 54 addiert?"
-        ]
+        ],
+        "partial": "Ein erster Teilschritt ist ausgerechnet: 46 + 50 = 96. Von 54 fehlen noch 4 Einer. Rechne selbst weiter: 96 + 4 = □."
       },
       {
         "label": "d)",
@@ -58,7 +61,8 @@ window.taskHelpData = {
           "Zerlege 12 in 10 + 2. Beginne mit 59 + 10. Notiere dein Zwischenergebnis selbst.",
           "Nimm dein eigenes Zwischenergebnis. Rechne nun + 2. Bei Minus ziehst du auch diesen zweiten Teil ab.",
           "Prüfe: Hast du insgesamt 12 addiert?"
-        ]
+        ],
+        "partial": "Ein erster Teilschritt ist ausgerechnet: 59 + 10 = 69. Von 12 fehlen noch 2 Einer. Rechne selbst weiter: 69 + 2 = □."
       },
       {
         "label": "e)",
@@ -72,7 +76,8 @@ window.taskHelpData = {
           "Zerlege 39 in 30 + 9. Beginne mit 64 + 30. Notiere dein Zwischenergebnis selbst.",
           "Nimm dein eigenes Zwischenergebnis. Rechne nun + 9. Bei Minus ziehst du auch diesen zweiten Teil ab.",
           "Prüfe: Hast du insgesamt 39 addiert?"
-        ]
+        ],
+        "partial": "Ein erster Teilschritt ist ausgerechnet: 64 + 30 = 94. Von 39 fehlen noch 9 Einer. Rechne selbst weiter: 94 + 9 = □."
       }
     ]
   },
@@ -92,7 +97,8 @@ window.taskHelpData = {
           "Zerlege 22 in 20 + 2. Beginne mit 38 − 20. Notiere dein Zwischenergebnis selbst.",
           "Nimm dein eigenes Zwischenergebnis. Rechne nun − 2. Bei Minus ziehst du auch diesen zweiten Teil ab.",
           "Prüfe: Hast du insgesamt 22 abgezogen?"
-        ]
+        ],
+        "partial": "Ein erster Teilschritt ist ausgerechnet: 38 − 20 = 18. Von 22 fehlen noch 2 Einer. Rechne selbst weiter: 18 − 2 = □."
       },
       {
         "label": "b)",
@@ -106,7 +112,8 @@ window.taskHelpData = {
           "Zerlege 19 in 10 + 9. Beginne mit 49 − 10. Notiere dein Zwischenergebnis selbst.",
           "Nimm dein eigenes Zwischenergebnis. Rechne nun − 9. Bei Minus ziehst du auch diesen zweiten Teil ab.",
           "Prüfe: Hast du insgesamt 19 abgezogen?"
-        ]
+        ],
+        "partial": "Ein erster Teilschritt ist ausgerechnet: 49 − 10 = 39. Von 19 fehlen noch 9 Einer. Rechne selbst weiter: 39 − 9 = □."
       },
       {
         "label": "c)",
@@ -120,7 +127,8 @@ window.taskHelpData = {
           "Zerlege 15 in 10 + 5. Beginne mit 50 − 10. Notiere dein Zwischenergebnis selbst.",
           "Nimm dein eigenes Zwischenergebnis. Rechne nun − 5. Bei Minus ziehst du auch diesen zweiten Teil ab.",
           "Prüfe: Hast du insgesamt 15 abgezogen?"
-        ]
+        ],
+        "partial": "Ein erster Teilschritt ist ausgerechnet: 50 − 10 = 40. Von 15 fehlen noch 5 Einer. Rechne selbst weiter: 40 − 5 = □."
       },
       {
         "label": "d)",
@@ -134,7 +142,8 @@ window.taskHelpData = {
           "Zerlege 17 in 10 + 7. Beginne mit 66 − 10. Notiere dein Zwischenergebnis selbst.",
           "Nimm dein eigenes Zwischenergebnis. Rechne nun − 7. Bei Minus ziehst du auch diesen zweiten Teil ab.",
           "Prüfe: Hast du insgesamt 17 abgezogen?"
-        ]
+        ],
+        "partial": "Ein erster Teilschritt ist ausgerechnet: 66 − 10 = 56. Von 17 fehlen noch 7 Einer. Rechne selbst weiter: 56 − 7 = □."
       },
       {
         "label": "e)",
@@ -148,7 +157,8 @@ window.taskHelpData = {
           "Zerlege 34 in 30 + 4. Beginne mit 72 − 30. Notiere dein Zwischenergebnis selbst.",
           "Nimm dein eigenes Zwischenergebnis. Rechne nun − 4. Bei Minus ziehst du auch diesen zweiten Teil ab.",
           "Prüfe: Hast du insgesamt 34 abgezogen?"
-        ]
+        ],
+        "partial": "Ein erster Teilschritt ist ausgerechnet: 72 − 30 = 42. Von 34 fehlen noch 4 Einer. Rechne selbst weiter: 42 − 4 = □."
       }
     ]
   },
@@ -168,7 +178,8 @@ window.taskHelpData = {
           "Zerlege 32 in 30 + 2. Beginne mit 48 + 30. Notiere dein Zwischenergebnis selbst.",
           "Nimm dein eigenes Zwischenergebnis. Rechne nun + 2. Bei Minus ziehst du auch diesen zweiten Teil ab.",
           "Prüfe: Hast du insgesamt 32 addiert?"
-        ]
+        ],
+        "partial": "Ein erster Teilschritt ist ausgerechnet: 48 + 30 = 78. Von 32 fehlen noch 2 Einer. Rechne selbst weiter: 78 + 2 = □."
       },
       {
         "label": "b)",
@@ -182,7 +193,8 @@ window.taskHelpData = {
           "Zerlege 36 in 30 + 6. Beginne mit 46 − 30. Notiere dein Zwischenergebnis selbst.",
           "Nimm dein eigenes Zwischenergebnis. Rechne nun − 6. Bei Minus ziehst du auch diesen zweiten Teil ab.",
           "Prüfe: Hast du insgesamt 36 abgezogen?"
-        ]
+        ],
+        "partial": "Ein erster Teilschritt ist ausgerechnet: 46 − 30 = 16. Von 36 fehlen noch 6 Einer. Rechne selbst weiter: 16 − 6 = □."
       },
       {
         "label": "c)",
@@ -196,7 +208,8 @@ window.taskHelpData = {
           "Zerlege 28 in 20 + 8. Beginne mit 100 − 20. Notiere dein Zwischenergebnis selbst.",
           "Nimm dein eigenes Zwischenergebnis. Rechne nun − 8. Bei Minus ziehst du auch diesen zweiten Teil ab.",
           "Prüfe: Hast du insgesamt 28 abgezogen?"
-        ]
+        ],
+        "partial": "Ein erster Teilschritt ist ausgerechnet: 100 − 20 = 80. Von 28 fehlen noch 8 Einer. Rechne selbst weiter: 80 − 8 = □."
       },
       {
         "label": "d)",
@@ -210,7 +223,8 @@ window.taskHelpData = {
           "Zerlege 66 in 60 + 6. Beginne mit 55 + 60. Notiere dein Zwischenergebnis selbst.",
           "Nimm dein eigenes Zwischenergebnis. Rechne nun + 6. Bei Minus ziehst du auch diesen zweiten Teil ab.",
           "Prüfe: Hast du insgesamt 66 addiert?"
-        ]
+        ],
+        "partial": "Ein erster Teilschritt ist ausgerechnet: 55 + 60 = 115. Von 66 fehlen noch 6 Einer. Rechne selbst weiter: 115 + 6 = □."
       }
     ]
   },
@@ -230,7 +244,8 @@ window.taskHelpData = {
           "Einer: Rechne 7 + 1. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?",
           "Zehner: Rechne 6 + 3. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?",
           "Hunderter: Rechne 5 + 2. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?"
-        ]
+        ],
+        "partial": "Die Einerspalte ist vorgerechnet: 7 + 1 = 8. Schreibe 8 in die Einerspalte. Berechne die übrigen Spalten selbst; das Gesamtergebnis bleibt offen."
       },
       {
         "label": "b)",
@@ -245,7 +260,8 @@ window.taskHelpData = {
           "Zehner: Rechne 4 + 2. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?",
           "Hunderter: Rechne 8 + 2. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?",
           "Tausender: Rechne 1 + 6 + deinen Übertrag aus der vorigen Spalte. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?"
-        ]
+        ],
+        "partial": "Die Einerspalte ist vorgerechnet: 6 + 3 = 9. Schreibe 9 in die Einerspalte. Berechne die übrigen Spalten selbst; das Gesamtergebnis bleibt offen."
       },
       {
         "label": "c)",
@@ -261,7 +277,8 @@ window.taskHelpData = {
           "Hunderter: Rechne 7 + 6 + deinen Übertrag aus der vorigen Spalte. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?",
           "Tausender: Rechne 5 + 4 + deinen Übertrag aus der vorigen Spalte. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?",
           "Nach der letzten Spalte ist noch ein Übertrag übrig. Wo musst du ihn notieren?"
-        ]
+        ],
+        "partial": "Die Einerspalte ist vorgerechnet: 4 + 6 = 10. Schreibe 0 in die Einerspalte. Übertrage 1 in die Zehnerspalte. Berechne die übrigen Spalten selbst; das Gesamtergebnis bleibt offen."
       },
       {
         "label": "d)",
@@ -277,7 +294,8 @@ window.taskHelpData = {
           "Hunderter: Rechne 5 + 5. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?",
           "Tausender: Rechne 4 + 7 + deinen Übertrag aus der vorigen Spalte. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?",
           "Nach der letzten Spalte ist noch ein Übertrag übrig. Wo musst du ihn notieren?"
-        ]
+        ],
+        "partial": "Die Einerspalte ist vorgerechnet: 9 + 4 = 13. Schreibe 3 in die Einerspalte. Übertrage 1 in die Zehnerspalte. Berechne die übrigen Spalten selbst; das Gesamtergebnis bleibt offen."
       }
     ]
   },
@@ -297,7 +315,8 @@ window.taskHelpData = {
           "Einer: Rechne 5 + 2. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?",
           "Zehner: Rechne 2 + 2. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?",
           "Hunderter: Rechne 6 + 3. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?"
-        ]
+        ],
+        "partial": "Die Einerspalte ist vorgerechnet: 5 + 2 = 7. Schreibe 7 in die Einerspalte. Berechne die übrigen Spalten selbst; das Gesamtergebnis bleibt offen."
       },
       {
         "label": "b)",
@@ -312,7 +331,8 @@ window.taskHelpData = {
           "Zehner: Rechne 6 + 3. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?",
           "Hunderter: Rechne 6 + 1. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?",
           "Tausender: Rechne 1 + 0. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?"
-        ]
+        ],
+        "partial": "Die Einerspalte ist vorgerechnet: 2 + 7 = 9. Schreibe 9 in die Einerspalte. Berechne die übrigen Spalten selbst; das Gesamtergebnis bleibt offen."
       },
       {
         "label": "c)",
@@ -327,7 +347,8 @@ window.taskHelpData = {
           "Zehner: Rechne 3 + 5 + deinen Übertrag aus der vorigen Spalte. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?",
           "Hunderter: Rechne 0 + 4. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?",
           "Tausender: Rechne 0 + 1. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?"
-        ]
+        ],
+        "partial": "Die Einerspalte ist vorgerechnet: 9 + 6 = 15. Schreibe 5 in die Einerspalte. Übertrage 1 in die Zehnerspalte. Berechne die übrigen Spalten selbst; das Gesamtergebnis bleibt offen."
       },
       {
         "label": "d)",
@@ -343,7 +364,8 @@ window.taskHelpData = {
           "Hunderter: Rechne 4 + 2. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?",
           "Tausender: Rechne 8 + 3. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?",
           "Nach der letzten Spalte ist noch ein Übertrag übrig. Wo musst du ihn notieren?"
-        ]
+        ],
+        "partial": "Die Einerspalte ist vorgerechnet: 6 + 4 = 10. Schreibe 0 in die Einerspalte. Übertrage 1 in die Zehnerspalte. Berechne die übrigen Spalten selbst; das Gesamtergebnis bleibt offen."
       }
     ]
   },
@@ -363,7 +385,8 @@ window.taskHelpData = {
           "Einer: Aktuell stehen oben 6, unten 2. Berechne 6 − 2 selbst und schreibe die Ziffer unter den Strich.",
           "Zehner: Aktuell stehen oben 5, unten 4. Berechne 5 − 4 selbst und schreibe die Ziffer unter den Strich.",
           "Hunderter: Aktuell stehen oben 7, unten 3. Berechne 7 − 3 selbst und schreibe die Ziffer unter den Strich."
-        ]
+        ],
+        "partial": "Die Einerspalte ist vorgerechnet: 6 − 2 = 4. Schreibe 4 in die Einerspalte. Berechne die übrigen Spalten selbst und beachte dabei die veränderten Stellen."
       },
       {
         "label": "b)",
@@ -377,7 +400,8 @@ window.taskHelpData = {
           "Einer: Aktuell stehen oben 7, unten 6. Berechne 7 − 6 selbst und schreibe die Ziffer unter den Strich.",
           "Zehner: Aktuell stehen oben 5, unten 4. Berechne 5 − 4 selbst und schreibe die Ziffer unter den Strich.",
           "Hunderter: Aktuell stehen oben 9, unten 0. Berechne 9 − 0 selbst und schreibe die Ziffer unter den Strich."
-        ]
+        ],
+        "partial": "Die Einerspalte ist vorgerechnet: 7 − 6 = 1. Schreibe 1 in die Einerspalte. Berechne die übrigen Spalten selbst und beachte dabei die veränderten Stellen."
       },
       {
         "label": "c)",
@@ -392,7 +416,8 @@ window.taskHelpData = {
           "Zehner: Aktuell stehen oben 0, unten 0. Berechne 0 − 0 selbst und schreibe die Ziffer unter den Strich.",
           "Hunderter: Aktuell stehen oben 0, unten 5. Oben reicht es noch nicht. Entbündele bei der nächsten verfügbaren Stelle links. In dieser Spalte kannst du danach 10 − 5 rechnen. Berechne die Ziffer selbst.",
           "Tausender: Aktuell stehen oben 1, unten 1. Berechne 1 − 1 selbst und schreibe die Ziffer unter den Strich."
-        ]
+        ],
+        "partial": "Die Einerspalte ist vorgerechnet: 6 − 1 = 5. Schreibe 5 in die Einerspalte. Berechne die übrigen Spalten selbst und beachte dabei die veränderten Stellen."
       },
       {
         "label": "d)",
@@ -407,7 +432,8 @@ window.taskHelpData = {
           "Zehner: Aktuell stehen oben 4, unten 7. Oben reicht es noch nicht. Entbündele bei der nächsten verfügbaren Stelle links. In dieser Spalte kannst du danach 14 − 7 rechnen. Berechne die Ziffer selbst.",
           "Hunderter: Aktuell stehen oben 1, unten 6. Oben reicht es noch nicht. Entbündele bei der nächsten verfügbaren Stelle links. In dieser Spalte kannst du danach 11 − 6 rechnen. Berechne die Ziffer selbst.",
           "Tausender: Aktuell stehen oben 8, unten 5. Berechne 8 − 5 selbst und schreibe die Ziffer unter den Strich."
-        ]
+        ],
+        "partial": "Entbündele zuerst von links und notiere die veränderten Stellen. Danach lautet der Teilschritt bei den Einern: 17 − 9 = 8. Schreibe 8 in die Einerspalte. Berechne die übrigen Spalten selbst und beachte dabei die veränderten Stellen."
       }
     ]
   },
@@ -428,7 +454,8 @@ window.taskHelpData = {
           "Zehner: Aktuell stehen oben 4, unten 6. Oben reicht es noch nicht. Entbündele bei der nächsten verfügbaren Stelle links. In dieser Spalte kannst du danach 14 − 6 rechnen. Berechne die Ziffer selbst.",
           "Hunderter: Aktuell stehen oben 5, unten 7. Oben reicht es noch nicht. Entbündele bei der nächsten verfügbaren Stelle links. In dieser Spalte kannst du danach 15 − 7 rechnen. Berechne die Ziffer selbst.",
           "Tausender: Aktuell stehen oben 2, unten 1. Berechne 2 − 1 selbst und schreibe die Ziffer unter den Strich."
-        ]
+        ],
+        "partial": "Entbündele zuerst von links und notiere die veränderten Stellen. Danach lautet der Teilschritt bei den Einern: 14 − 5 = 9. Schreibe 9 in die Einerspalte. Berechne die übrigen Spalten selbst und beachte dabei die veränderten Stellen."
       },
       {
         "label": "b)",
@@ -443,7 +470,8 @@ window.taskHelpData = {
           "Zehner: Aktuell stehen oben 3, unten 7. Oben reicht es noch nicht. Entbündele bei der nächsten verfügbaren Stelle links. In dieser Spalte kannst du danach 13 − 7 rechnen. Berechne die Ziffer selbst.",
           "Hunderter: Aktuell stehen oben 5, unten 5. Berechne 5 − 5 selbst und schreibe die Ziffer unter den Strich.",
           "Tausender: Aktuell stehen oben 8, unten 6. Berechne 8 − 6 selbst und schreibe die Ziffer unter den Strich."
-        ]
+        ],
+        "partial": "Die Einerspalte ist vorgerechnet: 6 − 5 = 1. Schreibe 1 in die Einerspalte. Berechne die übrigen Spalten selbst und beachte dabei die veränderten Stellen."
       },
       {
         "label": "c)",
@@ -458,7 +486,8 @@ window.taskHelpData = {
           "Zehner: Aktuell stehen oben 9, unten 6. Berechne 9 − 6 selbst und schreibe die Ziffer unter den Strich.",
           "Hunderter: Aktuell stehen oben 9, unten 5. Berechne 9 − 5 selbst und schreibe die Ziffer unter den Strich.",
           "Tausender: Aktuell stehen oben 0, unten 0. Berechne 0 − 0 selbst und schreibe die Ziffer unter den Strich."
-        ]
+        ],
+        "partial": "Entbündele zuerst von links und notiere die veränderten Stellen. Danach lautet der Teilschritt bei den Einern: 10 − 6 = 4. Schreibe 4 in die Einerspalte. Berechne die übrigen Spalten selbst und beachte dabei die veränderten Stellen."
       },
       {
         "label": "d)",
@@ -472,7 +501,8 @@ window.taskHelpData = {
           "Einer: Aktuell stehen oben 8, unten 9. Oben reicht es noch nicht. Entbündele bei der nächsten verfügbaren Stelle links. In dieser Spalte kannst du danach 18 − 9 rechnen. Berechne die Ziffer selbst.",
           "Zehner: Aktuell stehen oben 7, unten 7. Berechne 7 − 7 selbst und schreibe die Ziffer unter den Strich.",
           "Hunderter: Aktuell stehen oben 8, unten 7. Berechne 8 − 7 selbst und schreibe die Ziffer unter den Strich."
-        ]
+        ],
+        "partial": "Entbündele zuerst von links und notiere die veränderten Stellen. Danach lautet der Teilschritt bei den Einern: 18 − 9 = 9. Schreibe 9 in die Einerspalte. Berechne die übrigen Spalten selbst und beachte dabei die veränderten Stellen."
       }
     ]
   },
@@ -492,7 +522,8 @@ window.taskHelpData = {
           "Beginne mit 12 − 5. Notiere dein eigenes Zwischenergebnis.",
           "Übernimm das folgende Rechenzeichen und die nächste Zahl unverändert. Rechne so bis zum Ende weiter.",
           "Vergleiche anschließend mit der anderen Zeile derselben Teilaufgabe. Welche Rechnung wird dort zuerst ausgeführt? Begründe, ob die Klammer den Wert verändert."
-        ]
+        ],
+        "partial": "Der erste Rechenschritt ist vorgerechnet: 12 − 5 = 7. So geht deine neue Zeile weiter: 7 + 3 = □. Rechne die übrigen Schritte selbst."
       },
       {
         "label": "a) mit Klammer",
@@ -507,7 +538,8 @@ window.taskHelpData = {
           "Setze deine Klammerergebnisse an die Kästchen: 12 − □. Behalte alle Rechenzeichen außerhalb der Klammern bei.",
           "Rechne deine neue Zeile von links nach rechts. Schreibe nach jedem Rechenschritt eine neue Zeile.",
           "Vergleiche anschließend mit der anderen Zeile derselben Teilaufgabe. Welche Rechnung wird dort zuerst ausgeführt? Begründe, ob die Klammer den Wert verändert."
-        ]
+        ],
+        "partial": "Die erste Klammer ist vorgerechnet: 5 + 3 = 8. So geht deine neue Zeile weiter: 12 − 8 = □. Rechne die übrigen Schritte selbst."
       },
       {
         "label": "b) ohne Klammer",
@@ -521,7 +553,8 @@ window.taskHelpData = {
           "Beginne mit 34 − 12. Notiere dein eigenes Zwischenergebnis.",
           "Übernimm das folgende Rechenzeichen und die nächste Zahl unverändert. Rechne so bis zum Ende weiter.",
           "Vergleiche anschließend mit der anderen Zeile derselben Teilaufgabe. Welche Rechnung wird dort zuerst ausgeführt? Begründe, ob die Klammer den Wert verändert."
-        ]
+        ],
+        "partial": "Der erste Rechenschritt ist vorgerechnet: 34 − 12 = 22. So geht deine neue Zeile weiter: 22 − 7 = □. Rechne die übrigen Schritte selbst."
       },
       {
         "label": "b) mit Klammer",
@@ -536,7 +569,8 @@ window.taskHelpData = {
           "Setze deine Klammerergebnisse an die Kästchen: 34 − □. Behalte alle Rechenzeichen außerhalb der Klammern bei.",
           "Rechne deine neue Zeile von links nach rechts. Schreibe nach jedem Rechenschritt eine neue Zeile.",
           "Vergleiche anschließend mit der anderen Zeile derselben Teilaufgabe. Welche Rechnung wird dort zuerst ausgeführt? Begründe, ob die Klammer den Wert verändert."
-        ]
+        ],
+        "partial": "Die erste Klammer ist vorgerechnet: 12 − 7 = 5. So geht deine neue Zeile weiter: 34 − 5 = □. Rechne die übrigen Schritte selbst."
       },
       {
         "label": "c) ohne Klammer",
@@ -550,7 +584,8 @@ window.taskHelpData = {
           "Beginne mit 33 + 7. Notiere dein eigenes Zwischenergebnis.",
           "Übernimm das folgende Rechenzeichen und die nächste Zahl unverändert. Rechne so bis zum Ende weiter.",
           "Vergleiche anschließend mit der anderen Zeile derselben Teilaufgabe. Welche Rechnung wird dort zuerst ausgeführt? Begründe, ob die Klammer den Wert verändert."
-        ]
+        ],
+        "partial": "Der erste Rechenschritt ist vorgerechnet: 33 + 7 = 40. So geht deine neue Zeile weiter: 40 − 4 = □. Rechne die übrigen Schritte selbst."
       },
       {
         "label": "c) mit Klammer",
@@ -565,7 +600,8 @@ window.taskHelpData = {
           "Setze deine Klammerergebnisse an die Kästchen: 33 + □. Behalte alle Rechenzeichen außerhalb der Klammern bei.",
           "Rechne deine neue Zeile von links nach rechts. Schreibe nach jedem Rechenschritt eine neue Zeile.",
           "Vergleiche anschließend mit der anderen Zeile derselben Teilaufgabe. Welche Rechnung wird dort zuerst ausgeführt? Begründe, ob die Klammer den Wert verändert."
-        ]
+        ],
+        "partial": "Die erste Klammer ist vorgerechnet: 7 − 4 = 3. So geht deine neue Zeile weiter: 33 + 3 = □. Rechne die übrigen Schritte selbst."
       },
       {
         "label": "d) ohne Klammer",
@@ -579,7 +615,8 @@ window.taskHelpData = {
           "Beginne mit 49 + 21. Notiere dein eigenes Zwischenergebnis.",
           "Übernimm das folgende Rechenzeichen und die nächste Zahl unverändert. Rechne so bis zum Ende weiter.",
           "Vergleiche anschließend mit der anderen Zeile derselben Teilaufgabe. Welche Rechnung wird dort zuerst ausgeführt? Begründe, ob die Klammer den Wert verändert."
-        ]
+        ],
+        "partial": "Der erste Rechenschritt ist vorgerechnet: 49 + 21 = 70. So geht deine neue Zeile weiter: 70 + 5 = □. Rechne die übrigen Schritte selbst."
       },
       {
         "label": "d) mit Klammer",
@@ -594,7 +631,8 @@ window.taskHelpData = {
           "Setze deine Klammerergebnisse an die Kästchen: 49 + □. Behalte alle Rechenzeichen außerhalb der Klammern bei.",
           "Rechne deine neue Zeile von links nach rechts. Schreibe nach jedem Rechenschritt eine neue Zeile.",
           "Vergleiche anschließend mit der anderen Zeile derselben Teilaufgabe. Welche Rechnung wird dort zuerst ausgeführt? Begründe, ob die Klammer den Wert verändert."
-        ]
+        ],
+        "partial": "Die erste Klammer ist vorgerechnet: 21 + 5 = 26. So geht deine neue Zeile weiter: 49 + 26 = □. Rechne die übrigen Schritte selbst."
       }
     ],
     "variant": "left"
@@ -616,7 +654,8 @@ window.taskHelpData = {
           "Zweite Klammer: Berechne 10 − 5 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
           "Setze deine Klammerergebnisse an die Kästchen: 25 − □ + □. Behalte alle Rechenzeichen außerhalb der Klammern bei.",
           "Rechne deine neue Zeile von links nach rechts. Schreibe nach jedem Rechenschritt eine neue Zeile."
-        ]
+        ],
+        "partial": "Die erste Klammer ist vorgerechnet: 12 + 11 = 23. So geht deine neue Zeile weiter: 25 − 23 + (10 − 5) = □. Rechne die übrigen Schritte selbst."
       },
       {
         "label": "a) zweite Zeile",
@@ -631,7 +670,8 @@ window.taskHelpData = {
           "Zweite Klammer: Berechne 10 + 5 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
           "Setze deine Klammerergebnisse an die Kästchen: 25 + □ − □. Behalte alle Rechenzeichen außerhalb der Klammern bei.",
           "Rechne deine neue Zeile von links nach rechts. Schreibe nach jedem Rechenschritt eine neue Zeile."
-        ]
+        ],
+        "partial": "Die erste Klammer ist vorgerechnet: 12 − 11 = 1. So geht deine neue Zeile weiter: 25 + 1 − (10 + 5) = □. Rechne die übrigen Schritte selbst."
       },
       {
         "label": "a) dritte Zeile",
@@ -646,7 +686,8 @@ window.taskHelpData = {
           "Zweite Klammer: Berechne 10 + 5 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
           "Setze deine Klammerergebnisse an die Kästchen: 25 − □ + □. Behalte alle Rechenzeichen außerhalb der Klammern bei.",
           "Rechne deine neue Zeile von links nach rechts. Schreibe nach jedem Rechenschritt eine neue Zeile."
-        ]
+        ],
+        "partial": "Die erste Klammer ist vorgerechnet: 12 − 11 = 1. So geht deine neue Zeile weiter: 25 − 1 + (10 + 5) = □. Rechne die übrigen Schritte selbst."
       },
       {
         "label": "b) erste Zeile",
@@ -661,7 +702,8 @@ window.taskHelpData = {
           "Zweite Klammer: Berechne 20 − 8 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
           "Setze deine Klammerergebnisse an die Kästchen: 49 + □ + 5 + □. Behalte alle Rechenzeichen außerhalb der Klammern bei.",
           "Rechne deine neue Zeile von links nach rechts. Schreibe nach jedem Rechenschritt eine neue Zeile."
-        ]
+        ],
+        "partial": "Die erste Klammer ist vorgerechnet: 24 − 13 = 11. So geht deine neue Zeile weiter: 49 + 11 + 5 + (20 − 8) = □. Rechne die übrigen Schritte selbst."
       },
       {
         "label": "b) zweite Zeile",
@@ -676,7 +718,8 @@ window.taskHelpData = {
           "Zweite Klammer: Berechne 20 − 8 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
           "Setze deine Klammerergebnisse an die Kästchen: 49 − □ − 5 − □. Behalte alle Rechenzeichen außerhalb der Klammern bei.",
           "Rechne deine neue Zeile von links nach rechts. Schreibe nach jedem Rechenschritt eine neue Zeile."
-        ]
+        ],
+        "partial": "Die erste Klammer ist vorgerechnet: 24 − 13 = 11. So geht deine neue Zeile weiter: 49 − 11 − 5 − (20 − 8) = □. Rechne die übrigen Schritte selbst."
       },
       {
         "label": "b) dritte Zeile",
@@ -691,7 +734,8 @@ window.taskHelpData = {
           "Zweite Klammer: Berechne 20 − 8 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
           "Setze deine Klammerergebnisse an die Kästchen: 49 − □ − 5 + □. Behalte alle Rechenzeichen außerhalb der Klammern bei.",
           "Rechne deine neue Zeile von links nach rechts. Schreibe nach jedem Rechenschritt eine neue Zeile."
-        ]
+        ],
+        "partial": "Die erste Klammer ist vorgerechnet: 24 + 13 = 37. So geht deine neue Zeile weiter: 49 − 37 − 5 + (20 − 8) = □. Rechne die übrigen Schritte selbst."
       }
     ],
     "variant": "left"
@@ -712,7 +756,8 @@ window.taskHelpData = {
           "Schau dir 7 und 23 an. Warum passen diese Zahlen gut zusammen? Berechne ihre Summe selbst.",
           "Schreibe die ganze Aufgabe mit deinen Klammern neu auf. Jede ursprüngliche Zahl muss genau einmal vorkommen.",
           "Berechne zuerst deine Klammern und addiere danach die übrigen Summanden. Notiere die Rechenschritte in deinem Heft."
-        ]
+        ],
+        "partial": "Ein günstiges Zahlenpaar ist vorgerechnet: 7 + 23 = 30. Damit kannst du die Aufgabe so weiterschreiben: 30 + 12 = □. Rechne selbst weiter."
       },
       {
         "label": "b)",
@@ -726,7 +771,8 @@ window.taskHelpData = {
           "Schau dir 24 und 36 an. Warum passen diese Zahlen gut zusammen? Berechne ihre Summe selbst.",
           "Schreibe die ganze Aufgabe mit deinen Klammern neu auf. Jede ursprüngliche Zahl muss genau einmal vorkommen.",
           "Berechne zuerst deine Klammern und addiere danach die übrigen Summanden. Notiere die Rechenschritte in deinem Heft."
-        ]
+        ],
+        "partial": "Ein günstiges Zahlenpaar ist vorgerechnet: 24 + 36 = 60. Damit kannst du die Aufgabe so weiterschreiben: 60 + 15 = □. Rechne selbst weiter."
       }
     ]
   },
@@ -746,7 +792,8 @@ window.taskHelpData = {
           "Schau dir 27 und 23 an. Warum passen diese Zahlen gut zusammen? Berechne ihre Summe selbst.",
           "Schreibe die ganze Aufgabe mit deinen Klammern neu auf. Jede ursprüngliche Zahl muss genau einmal vorkommen.",
           "Berechne zuerst deine Klammern und addiere danach die übrigen Summanden. Notiere die Rechenschritte in deinem Heft."
-        ]
+        ],
+        "partial": "Ein günstiges Zahlenpaar ist vorgerechnet: 27 + 23 = 50. Damit kannst du die Aufgabe so weiterschreiben: 50 + 22 = □. Rechne selbst weiter."
       },
       {
         "label": "b)",
@@ -760,7 +807,8 @@ window.taskHelpData = {
           "Schau dir 49 und 11 an. Warum passen diese Zahlen gut zusammen? Berechne ihre Summe selbst.",
           "Schreibe die ganze Aufgabe mit deinen Klammern neu auf. Jede ursprüngliche Zahl muss genau einmal vorkommen.",
           "Berechne zuerst deine Klammern und addiere danach die übrigen Summanden. Notiere die Rechenschritte in deinem Heft."
-        ]
+        ],
+        "partial": "Ein günstiges Zahlenpaar ist vorgerechnet: 49 + 11 = 60. Damit kannst du die Aufgabe so weiterschreiben: 60 + 37 = □. Rechne selbst weiter."
       },
       {
         "label": "c)",
@@ -775,7 +823,8 @@ window.taskHelpData = {
           "Suche ein weiteres günstiges Paar: Was fällt dir bei 45 und 55 auf? Fasse auch dieses Paar in einer Klammer zusammen.",
           "Schreibe die ganze Aufgabe mit deinen Klammern neu auf. Jede ursprüngliche Zahl muss genau einmal vorkommen.",
           "Berechne zuerst deine Klammern und addiere danach die übrigen Summanden. Notiere die Rechenschritte in deinem Heft."
-        ]
+        ],
+        "partial": "Ein günstiges Zahlenpaar ist vorgerechnet: 24 + 26 = 50. Damit kannst du die Aufgabe so weiterschreiben: 50 + 45 + 55 = □. Rechne selbst weiter."
       }
     ]
   },
@@ -796,7 +845,8 @@ window.taskHelpData = {
           "Suche ein weiteres günstiges Paar: Was fällt dir bei 13 und 37 auf? Fasse auch dieses Paar in einer Klammer zusammen.",
           "Schreibe die ganze Aufgabe mit deinen Klammern neu auf. Jede ursprüngliche Zahl muss genau einmal vorkommen.",
           "Berechne zuerst deine Klammern und addiere danach die übrigen Summanden. Notiere die Rechenschritte in deinem Heft."
-        ]
+        ],
+        "partial": "Ein günstiges Zahlenpaar ist vorgerechnet: 26 + 24 = 50. Damit kannst du die Aufgabe so weiterschreiben: 50 + 13 + 37 = □. Rechne selbst weiter."
       },
       {
         "label": "b)",
@@ -811,7 +861,8 @@ window.taskHelpData = {
           "Suche ein weiteres günstiges Paar: Was fällt dir bei 34 und 66 auf? Fasse auch dieses Paar in einer Klammer zusammen.",
           "Schreibe die ganze Aufgabe mit deinen Klammern neu auf. Jede ursprüngliche Zahl muss genau einmal vorkommen.",
           "Berechne zuerst deine Klammern und addiere danach die übrigen Summanden. Notiere die Rechenschritte in deinem Heft."
-        ]
+        ],
+        "partial": "Ein günstiges Zahlenpaar ist vorgerechnet: 77 + 23 = 100. Damit kannst du die Aufgabe so weiterschreiben: 100 + 34 + 66 = □. Rechne selbst weiter."
       },
       {
         "label": "c)",
@@ -826,7 +877,8 @@ window.taskHelpData = {
           "Suche ein weiteres günstiges Paar: Was fällt dir bei 55 und 45 auf? Fasse auch dieses Paar in einer Klammer zusammen.",
           "Schreibe die ganze Aufgabe mit deinen Klammern neu auf. Jede ursprüngliche Zahl muss genau einmal vorkommen.",
           "Berechne zuerst deine Klammern und addiere danach die übrigen Summanden. Notiere die Rechenschritte in deinem Heft."
-        ]
+        ],
+        "partial": "Ein günstiges Zahlenpaar ist vorgerechnet: 11 + 39 = 50. Damit kannst du die Aufgabe so weiterschreiben: 50 + 55 + 16 + 45 = □. Rechne selbst weiter."
       }
     ]
   }
