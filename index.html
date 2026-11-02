@@ -507,11 +507,6 @@
           <button class="reveal-button" type="button" data-panel="help-2" aria-expanded="false">Hilfe 2</button>
           <div id="help-2" class="help-panel"></div>
 
-          <button class="reveal-button" type="button" data-panel="solution" aria-expanded="false">So prüfst du deinen Weg</button>
-          <div id="solution" class="help-panel solution-panel"></div>
-
-          <button class="reveal-button" type="button" data-panel="model-solution" aria-expanded="false">Typischer Stolperstein</button>
-          <div id="model-solution" class="help-panel"></div>
 
           <button class="reveal-button" type="button" data-panel="real-task" aria-expanded="false">Schritt für Schritt zur richtigen Lösung!</button>
           <div id="real-task" class="help-panel">
@@ -585,7 +580,7 @@
           next.hidden = true;
           const finish = document.createElement("p");
           finish.className = "dialog-finished";
-          finish.textContent = "Jetzt bist du dran: Beende deine Rechnung im Heft und nutze anschließend die Hilfe zum Prüfen deines Wegs.";
+          finish.textContent = "Jetzt bist du dran: Beende deine Rechnung im Heft und prüfe deine Rechnung selbst.";
           history.append(finish);
         }
       }
@@ -599,8 +594,6 @@
       document.getElementById("task-prompt").textContent = part.label + "  " + part.expression;
       document.getElementById("help-1").textContent = part.strategy;
       document.getElementById("help-2").textContent = part.start;
-      document.getElementById("solution").textContent = part.check;
-      document.getElementById("model-solution").textContent = part.trap;
       renderGuidedHelp(part);
       closeAllHelpPanels();
     }
