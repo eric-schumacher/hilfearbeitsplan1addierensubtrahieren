@@ -8,7 +8,7 @@
     const targets = groups.length ? groups : [0];
     const rows = [{cells: ["", ...source]}];
     let current = [...source];
-    const limit = Math.min(mode === "partial" ? 1 : count, targets.length);
+    const limit = mode === "setup" ? 0 : Math.min(mode === "partial" ? 1 : count, targets.length);
     for (let j = 0; j < limit; j++) {
       const index = targets[j];
       const m = source[index].match(/(\d+) ([+−]) (\d+)/);
@@ -60,6 +60,7 @@
     if (task.kind === "add" || task.kind === "subtract") return columnModel(part.expression, task.kind, mode, Math.max(0, stepIndex - 1));
     if (task.kind === "brackets") return bracketModel(part.expression, mode, Math.max(1, stepIndex));
     if (task.kind === "laws") {
+      if (mode === "setup") return bracketModel(part.expression, "setup");
       const pair = part.start.match(/Schau dir (\d+) und (\d+)/);
       const rest = part.expression.split(" + ");
       rest.splice(rest.indexOf(pair[1]), 1); rest.splice(rest.indexOf(pair[2]), 1);
