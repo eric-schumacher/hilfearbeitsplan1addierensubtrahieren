@@ -392,6 +392,16 @@
     .variant-right { border-left: 6px solid #609b20; padding-left: 12px; }
     .next-hint { margin-top: 18px; }
     [hidden] { display: none !important; }
+
+    .notation-scroll { max-width: 100%; overflow-x: auto; padding: 12px 0; }
+    .task-notation { border-collapse: collapse; table-layout: fixed; font-family: Consolas, "Courier New", monospace; font-size: clamp(1.05rem, 2.2vw, 1.5rem); line-height: 1.5; margin: 8px 0; }
+    .task-notation caption { font-family: Arial, sans-serif; font-size: .8em; line-height: 1.4; text-align: left; padding-bottom: 12px; color: #333; }
+    .task-notation td, .task-notation th { text-align: center; vertical-align: middle; padding: 5px 0; white-space: nowrap; }
+    .task-notation .notation-places { color: #555; font-size: .75em; }
+    .task-notation .notation-unbundled, .task-notation .notation-carry { color: #982c17; font-size: .8em; font-weight: 700; }
+    .task-notation .notation-result td { border-top: 2px solid #242424; }
+    .task-notation s { text-decoration-thickness: 2px; text-decoration-color: #982c17; }
+    .task-notation .notation-replaced { background: #fff0bd; border-bottom: 2px solid #936800; }
   </style>
 </head>
 <body>
@@ -521,6 +531,7 @@
   </main>
 
   <script src="real-task-data.js"></script>
+  <script src="task-notation.js"></script>
   <script>
     const tasks = window.taskHelpData;
 
@@ -557,7 +568,7 @@
       });
     }
 
-    function renderGuidedHelp(part) {
+    function renderGuidedHelp(task, part) {
       const container = document.getElementById("real-task-content");
       container.replaceChildren();
       const intro = document.createElement("p");
@@ -577,6 +588,7 @@
         const text = document.createElement("p");
         text.textContent = part.steps[stepIndex++];
         step.append(progress, text);
+        window.taskNotation.append(step, task, part, stepIndex === 1 ? "setup" : "hint", stepIndex - 1);
         history.append(step);
         next.textContent = "Nächster Tipp";
         if (stepIndex === part.steps.length) {
@@ -598,7 +610,10 @@
       document.getElementById("help-1").textContent = part.strategy;
       document.getElementById("help-2").textContent = part.start;
       document.getElementById("help-3").textContent = part.partial;
-      renderGuidedHelp(part);
+      window.taskNotation.append(document.getElementById("help-1"), task, part, "setup");
+      window.taskNotation.append(document.getElementById("help-2"), task, part, "hint");
+      window.taskNotation.append(document.getElementById("help-3"), task, part, "partial");
+      renderGuidedHelp(task, part);
       closeAllHelpPanels();
     }
 
@@ -644,4 +659,5 @@
   </script>
 </body>
 </html>
+
 

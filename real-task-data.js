@@ -1,4 +1,4 @@
-// Aufgaben mit Originalzahlen, gestuften Tipps und einem vorgerechneten Teilschritt.
+// Originalaufgaben mit gestuften Hilfen und korrekter Schreibweise.
 window.taskHelpData = {
   "kopf-1": {
     "title": "S. 54 Nr. 1 – Kopfrechnen",
@@ -235,8 +235,8 @@ window.taskHelpData = {
       {
         "label": "a)",
         "expression": "567 + 231",
-        "strategy": "Schreibe 567 und 231 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor.",
-        "start": "Einer: Rechne 7 + 1. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?",
+        "strategy": "Schreibe 567 und 231 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor. Nutze die Stellenüberschriften im Schreibschema: Jede Ziffer bleibt in ihrer Spalte.",
+        "start": "Einer: Rechne 7 + 1. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte? Notiere den Übertrag klein in der nächsten Spalte links, unmittelbar über dem Ergebnisstrich.",
         "check": "Ziehe von deinem Ergebnis 231 ab. Die Gegenaufgabe muss wieder 567 ergeben.",
         "trap": "Bei 567 + 231 darfst du einen Übertrag nicht vergessen. Schreibe nur die Einerziffer einer Spaltensumme in die Ergebnisspalte.",
         "steps": [
@@ -250,8 +250,8 @@ window.taskHelpData = {
       {
         "label": "b)",
         "expression": "1846 + 6223",
-        "strategy": "Schreibe 1846 und 6223 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor.",
-        "start": "Einer: Rechne 6 + 3. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?",
+        "strategy": "Schreibe 1846 und 6223 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor. Nutze die Stellenüberschriften im Schreibschema: Jede Ziffer bleibt in ihrer Spalte.",
+        "start": "Einer: Rechne 6 + 3. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte? Notiere den Übertrag klein in der nächsten Spalte links, unmittelbar über dem Ergebnisstrich.",
         "check": "Ziehe von deinem Ergebnis 6223 ab. Die Gegenaufgabe muss wieder 1846 ergeben.",
         "trap": "Bei 1846 + 6223 darfst du einen Übertrag nicht vergessen. Schreibe nur die Einerziffer einer Spaltensumme in die Ergebnisspalte.",
         "steps": [
@@ -266,8 +266,8 @@ window.taskHelpData = {
       {
         "label": "c)",
         "expression": "5794 + 4606",
-        "strategy": "Schreibe 5794 und 4606 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor.",
-        "start": "Einer: Rechne 4 + 6. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?",
+        "strategy": "Schreibe 5794 und 4606 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor. Nutze die Stellenüberschriften im Schreibschema: Jede Ziffer bleibt in ihrer Spalte.",
+        "start": "Einer: Rechne 4 + 6. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte? Notiere den Übertrag klein in der nächsten Spalte links, unmittelbar über dem Ergebnisstrich.",
         "check": "Ziehe von deinem Ergebnis 4606 ab. Die Gegenaufgabe muss wieder 5794 ergeben.",
         "trap": "Bei 5794 + 4606 darfst du einen Übertrag nicht vergessen. Schreibe nur die Einerziffer einer Spaltensumme in die Ergebnisspalte.",
         "steps": [
@@ -283,8 +283,8 @@ window.taskHelpData = {
       {
         "label": "d)",
         "expression": "4529 + 7534",
-        "strategy": "Schreibe 4529 und 7534 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor.",
-        "start": "Einer: Rechne 9 + 4. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?",
+        "strategy": "Schreibe 4529 und 7534 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor. Nutze die Stellenüberschriften im Schreibschema: Jede Ziffer bleibt in ihrer Spalte.",
+        "start": "Einer: Rechne 9 + 4. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte? Notiere den Übertrag klein in der nächsten Spalte links, unmittelbar über dem Ergebnisstrich.",
         "check": "Ziehe von deinem Ergebnis 7534 ab. Die Gegenaufgabe muss wieder 4529 ergeben.",
         "trap": "Bei 4529 + 7534 darfst du einen Übertrag nicht vergessen. Schreibe nur die Einerziffer einer Spaltensumme in die Ergebnisspalte.",
         "steps": [
@@ -306,8 +306,8 @@ window.taskHelpData = {
       {
         "label": "a)",
         "expression": "625 + 322",
-        "strategy": "Schreibe 625 und 322 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor.",
-        "start": "Einer: Rechne 5 + 2. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?",
+        "strategy": "Schreibe 625 und 322 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor. Nutze die Stellenüberschriften im Schreibschema: Jede Ziffer bleibt in ihrer Spalte.",
+        "start": "Einer: Rechne 5 + 2. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte? Notiere den Übertrag klein in der nächsten Spalte links, unmittelbar über dem Ergebnisstrich.",
         "check": "Ziehe von deinem Ergebnis 322 ab. Die Gegenaufgabe muss wieder 625 ergeben.",
         "trap": "Bei 625 + 322 darfst du einen Übertrag nicht vergessen. Schreibe nur die Einerziffer einer Spaltensumme in die Ergebnisspalte.",
         "steps": [
@@ -321,8 +321,8 @@ window.taskHelpData = {
       {
         "label": "b)",
         "expression": "1662 + 137",
-        "strategy": "Schreibe 1662 und 137 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor.",
-        "start": "Einer: Rechne 2 + 7. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?",
+        "strategy": "Schreibe 1662 und 137 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor. Nutze die Stellenüberschriften im Schreibschema: Jede Ziffer bleibt in ihrer Spalte.",
+        "start": "Einer: Rechne 2 + 7. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte? Notiere den Übertrag klein in der nächsten Spalte links, unmittelbar über dem Ergebnisstrich.",
         "check": "Ziehe von deinem Ergebnis 137 ab. Die Gegenaufgabe muss wieder 1662 ergeben.",
         "trap": "Bei 1662 + 137 darfst du einen Übertrag nicht vergessen. Schreibe nur die Einerziffer einer Spaltensumme in die Ergebnisspalte.",
         "steps": [
@@ -337,8 +337,8 @@ window.taskHelpData = {
       {
         "label": "c)",
         "expression": "39 + 1456",
-        "strategy": "Schreibe 39 und 1456 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor.",
-        "start": "Einer: Rechne 9 + 6. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?",
+        "strategy": "Schreibe 39 und 1456 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor. Nutze die Stellenüberschriften im Schreibschema: Jede Ziffer bleibt in ihrer Spalte.",
+        "start": "Einer: Rechne 9 + 6. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte? Notiere den Übertrag klein in der nächsten Spalte links, unmittelbar über dem Ergebnisstrich.",
         "check": "Ziehe von deinem Ergebnis 1456 ab. Die Gegenaufgabe muss wieder 39 ergeben.",
         "trap": "Bei 39 + 1456 darfst du einen Übertrag nicht vergessen. Schreibe nur die Einerziffer einer Spaltensumme in die Ergebnisspalte.",
         "steps": [
@@ -353,8 +353,8 @@ window.taskHelpData = {
       {
         "label": "d)",
         "expression": "8406 + 3204",
-        "strategy": "Schreibe 8406 und 3204 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor.",
-        "start": "Einer: Rechne 6 + 4. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte?",
+        "strategy": "Schreibe 8406 und 3204 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor. Nutze die Stellenüberschriften im Schreibschema: Jede Ziffer bleibt in ihrer Spalte.",
+        "start": "Einer: Rechne 6 + 4. Welche Ziffer schreibst du unter den Strich? Entsteht ein Übertrag für die nächste Spalte? Notiere den Übertrag klein in der nächsten Spalte links, unmittelbar über dem Ergebnisstrich.",
         "check": "Ziehe von deinem Ergebnis 3204 ab. Die Gegenaufgabe muss wieder 8406 ergeben.",
         "trap": "Bei 8406 + 3204 darfst du einen Übertrag nicht vergessen. Schreibe nur die Einerziffer einer Spaltensumme in die Ergebnisspalte.",
         "steps": [
@@ -376,8 +376,8 @@ window.taskHelpData = {
       {
         "label": "a)",
         "expression": "756 − 342",
-        "strategy": "Schreibe 756 und 342 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor.",
-        "start": "Einer: Aktuell stehen oben 6, unten 2. Berechne 6 − 2 selbst und schreibe die Ziffer unter den Strich.",
+        "strategy": "Schreibe 756 und 342 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor. Nutze die Stellenüberschriften im Schreibschema: Jede Ziffer bleibt in ihrer Spalte. Beim Entbündeln stehen die veränderten Werte über den durchgestrichenen ursprünglichen Ziffern; unten entstehen keine Überträge.",
+        "start": "Einer: Aktuell stehen oben 6, unten 2. Berechne 6 − 2 selbst und schreibe die Ziffer unter den Strich. Streiche beim Entbündeln die veränderten oberen Ziffern durch und notiere ihre neuen Werte klein direkt darüber. Verwende für die weitere Rechnung diese neuen Werte.",
         "check": "Addiere zu deinem Ergebnis 342. Erhältst du wieder die Ausgangszahl 756?",
         "trap": "Bei 756 − 342 bleiben die Zahlen in ihrer Reihenfolge. Wenn du entbündelst, verändert sich auch eine Stelle links. Notiere das sofort.",
         "steps": [
@@ -391,8 +391,8 @@ window.taskHelpData = {
       {
         "label": "b)",
         "expression": "957 − 46",
-        "strategy": "Schreibe 957 und 46 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor.",
-        "start": "Einer: Aktuell stehen oben 7, unten 6. Berechne 7 − 6 selbst und schreibe die Ziffer unter den Strich.",
+        "strategy": "Schreibe 957 und 46 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor. Nutze die Stellenüberschriften im Schreibschema: Jede Ziffer bleibt in ihrer Spalte. Beim Entbündeln stehen die veränderten Werte über den durchgestrichenen ursprünglichen Ziffern; unten entstehen keine Überträge.",
+        "start": "Einer: Aktuell stehen oben 7, unten 6. Berechne 7 − 6 selbst und schreibe die Ziffer unter den Strich. Streiche beim Entbündeln die veränderten oberen Ziffern durch und notiere ihre neuen Werte klein direkt darüber. Verwende für die weitere Rechnung diese neuen Werte.",
         "check": "Addiere zu deinem Ergebnis 46. Erhältst du wieder die Ausgangszahl 957?",
         "trap": "Bei 957 − 46 bleiben die Zahlen in ihrer Reihenfolge. Wenn du entbündelst, verändert sich auch eine Stelle links. Notiere das sofort.",
         "steps": [
@@ -406,8 +406,8 @@ window.taskHelpData = {
       {
         "label": "c)",
         "expression": "2006 − 1501",
-        "strategy": "Schreibe 2006 und 1501 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor.",
-        "start": "Einer: Aktuell stehen oben 6, unten 1. Berechne 6 − 1 selbst und schreibe die Ziffer unter den Strich.",
+        "strategy": "Schreibe 2006 und 1501 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor. Nutze die Stellenüberschriften im Schreibschema: Jede Ziffer bleibt in ihrer Spalte. Beim Entbündeln stehen die veränderten Werte über den durchgestrichenen ursprünglichen Ziffern; unten entstehen keine Überträge.",
+        "start": "Einer: Aktuell stehen oben 6, unten 1. Berechne 6 − 1 selbst und schreibe die Ziffer unter den Strich. Streiche beim Entbündeln die veränderten oberen Ziffern durch und notiere ihre neuen Werte klein direkt darüber. Verwende für die weitere Rechnung diese neuen Werte.",
         "check": "Addiere zu deinem Ergebnis 1501. Erhältst du wieder die Ausgangszahl 2006?",
         "trap": "Bei 2006 − 1501 bleiben die Zahlen in ihrer Reihenfolge. Wenn du entbündelst, verändert sich auch eine Stelle links. Notiere das sofort.",
         "steps": [
@@ -422,8 +422,8 @@ window.taskHelpData = {
       {
         "label": "d)",
         "expression": "9257 − 5679",
-        "strategy": "Schreibe 9257 und 5679 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor.",
-        "start": "Einer: Aktuell stehen oben 7, unten 9. Oben reicht es noch nicht. Entbündele bei der nächsten verfügbaren Stelle links. In dieser Spalte kannst du danach 17 − 9 rechnen. Berechne die Ziffer selbst.",
+        "strategy": "Schreibe 9257 und 5679 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor. Nutze die Stellenüberschriften im Schreibschema: Jede Ziffer bleibt in ihrer Spalte. Beim Entbündeln stehen die veränderten Werte über den durchgestrichenen ursprünglichen Ziffern; unten entstehen keine Überträge.",
+        "start": "Einer: Aktuell stehen oben 7, unten 9. Oben reicht es noch nicht. Entbündele bei der nächsten verfügbaren Stelle links. In dieser Spalte kannst du danach 17 − 9 rechnen. Berechne die Ziffer selbst. Streiche beim Entbündeln die veränderten oberen Ziffern durch und notiere ihre neuen Werte klein direkt darüber. Verwende für die weitere Rechnung diese neuen Werte.",
         "check": "Addiere zu deinem Ergebnis 5679. Erhältst du wieder die Ausgangszahl 9257?",
         "trap": "Bei 9257 − 5679 bleiben die Zahlen in ihrer Reihenfolge. Wenn du entbündelst, verändert sich auch eine Stelle links. Notiere das sofort.",
         "steps": [
@@ -444,8 +444,8 @@ window.taskHelpData = {
       {
         "label": "a)",
         "expression": "3654 − 1765",
-        "strategy": "Schreibe 3654 und 1765 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor.",
-        "start": "Einer: Aktuell stehen oben 4, unten 5. Oben reicht es noch nicht. Entbündele bei der nächsten verfügbaren Stelle links. In dieser Spalte kannst du danach 14 − 5 rechnen. Berechne die Ziffer selbst.",
+        "strategy": "Schreibe 3654 und 1765 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor. Nutze die Stellenüberschriften im Schreibschema: Jede Ziffer bleibt in ihrer Spalte. Beim Entbündeln stehen die veränderten Werte über den durchgestrichenen ursprünglichen Ziffern; unten entstehen keine Überträge.",
+        "start": "Einer: Aktuell stehen oben 4, unten 5. Oben reicht es noch nicht. Entbündele bei der nächsten verfügbaren Stelle links. In dieser Spalte kannst du danach 14 − 5 rechnen. Berechne die Ziffer selbst. Streiche beim Entbündeln die veränderten oberen Ziffern durch und notiere ihre neuen Werte klein direkt darüber. Verwende für die weitere Rechnung diese neuen Werte.",
         "check": "Addiere zu deinem Ergebnis 1765. Erhältst du wieder die Ausgangszahl 3654?",
         "trap": "Bei 3654 − 1765 bleiben die Zahlen in ihrer Reihenfolge. Wenn du entbündelst, verändert sich auch eine Stelle links. Notiere das sofort.",
         "steps": [
@@ -460,8 +460,8 @@ window.taskHelpData = {
       {
         "label": "b)",
         "expression": "8636 − 6575",
-        "strategy": "Schreibe 8636 und 6575 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor.",
-        "start": "Einer: Aktuell stehen oben 6, unten 5. Berechne 6 − 5 selbst und schreibe die Ziffer unter den Strich.",
+        "strategy": "Schreibe 8636 und 6575 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor. Nutze die Stellenüberschriften im Schreibschema: Jede Ziffer bleibt in ihrer Spalte. Beim Entbündeln stehen die veränderten Werte über den durchgestrichenen ursprünglichen Ziffern; unten entstehen keine Überträge.",
+        "start": "Einer: Aktuell stehen oben 6, unten 5. Berechne 6 − 5 selbst und schreibe die Ziffer unter den Strich. Streiche beim Entbündeln die veränderten oberen Ziffern durch und notiere ihre neuen Werte klein direkt darüber. Verwende für die weitere Rechnung diese neuen Werte.",
         "check": "Addiere zu deinem Ergebnis 6575. Erhältst du wieder die Ausgangszahl 8636?",
         "trap": "Bei 8636 − 6575 bleiben die Zahlen in ihrer Reihenfolge. Wenn du entbündelst, verändert sich auch eine Stelle links. Notiere das sofort.",
         "steps": [
@@ -476,8 +476,8 @@ window.taskHelpData = {
       {
         "label": "c)",
         "expression": "1000 − 566",
-        "strategy": "Schreibe 1000 und 566 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor.",
-        "start": "Einer: Aktuell stehen oben 0, unten 6. Oben reicht es noch nicht. Entbündele bei der nächsten verfügbaren Stelle links. Dazwischen liegt eine Null: Entbündele über sie hinweg und notiere jede veränderte Stelle. In dieser Spalte kannst du danach 10 − 6 rechnen. Berechne die Ziffer selbst.",
+        "strategy": "Schreibe 1000 und 566 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor. Nutze die Stellenüberschriften im Schreibschema: Jede Ziffer bleibt in ihrer Spalte. Beim Entbündeln stehen die veränderten Werte über den durchgestrichenen ursprünglichen Ziffern; unten entstehen keine Überträge.",
+        "start": "Einer: Aktuell stehen oben 0, unten 6. Oben reicht es noch nicht. Entbündele bei der nächsten verfügbaren Stelle links. Dazwischen liegt eine Null: Entbündele über sie hinweg und notiere jede veränderte Stelle. In dieser Spalte kannst du danach 10 − 6 rechnen. Berechne die Ziffer selbst. Streiche beim Entbündeln die veränderten oberen Ziffern durch und notiere ihre neuen Werte klein direkt darüber. Verwende für die weitere Rechnung diese neuen Werte.",
         "check": "Addiere zu deinem Ergebnis 566. Erhältst du wieder die Ausgangszahl 1000?",
         "trap": "Bei 1000 − 566 bleiben die Zahlen in ihrer Reihenfolge. Wenn du entbündelst, verändert sich auch eine Stelle links. Notiere das sofort.",
         "steps": [
@@ -492,8 +492,8 @@ window.taskHelpData = {
       {
         "label": "d)",
         "expression": "888 − 779",
-        "strategy": "Schreibe 888 und 779 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor.",
-        "start": "Einer: Aktuell stehen oben 8, unten 9. Oben reicht es noch nicht. Entbündele bei der nächsten verfügbaren Stelle links. In dieser Spalte kannst du danach 18 − 9 rechnen. Berechne die Ziffer selbst.",
+        "strategy": "Schreibe 888 und 779 stellengerecht untereinander. Einer stehen unter Einern. Beginne rechts und arbeite dich nach links vor. Nutze die Stellenüberschriften im Schreibschema: Jede Ziffer bleibt in ihrer Spalte. Beim Entbündeln stehen die veränderten Werte über den durchgestrichenen ursprünglichen Ziffern; unten entstehen keine Überträge.",
+        "start": "Einer: Aktuell stehen oben 8, unten 9. Oben reicht es noch nicht. Entbündele bei der nächsten verfügbaren Stelle links. In dieser Spalte kannst du danach 18 − 9 rechnen. Berechne die Ziffer selbst. Streiche beim Entbündeln die veränderten oberen Ziffern durch und notiere ihre neuen Werte klein direkt darüber. Verwende für die weitere Rechnung diese neuen Werte.",
         "check": "Addiere zu deinem Ergebnis 779. Erhältst du wieder die Ausgangszahl 888?",
         "trap": "Bei 888 − 779 bleiben die Zahlen in ihrer Reihenfolge. Wenn du entbündelst, verändert sich auch eine Stelle links. Notiere das sofort.",
         "steps": [
@@ -513,126 +513,126 @@ window.taskHelpData = {
       {
         "label": "a) ohne Klammer",
         "expression": "12 − 5 + 3",
-        "strategy": "Hier gibt es keine Klammer. Plus und Minus sind gleichrangig: Rechne von links nach rechts.",
-        "start": "Beginne mit 12 − 5. Notiere dein eigenes Zwischenergebnis.",
+        "strategy": "Hier gibt es keine Klammer. Plus und Minus sind gleichrangig: Rechne von links nach rechts. Schreibe das Ergebnis einer Klammer in der nächsten Zeile genau unter diese Klammer. Übernimm alle übrigen Zahlen, Rechenzeichen und Klammern unverändert in dieselbe Zeile.",
+        "start": "Beginne mit 12 − 5. Notiere dein eigenes Zwischenergebnis. Schreibe dieses Zwischenergebnis in die nächste Zeile unter die erste Rechnung und übernimm den Rest unverändert.",
         "check": "Vergleiche jede Zeile mit 12 − 5 + 3: Sind alle Zahlen und Zeichen übernommen? Wurde jede Klammer zuerst berechnet?",
         "trap": "Plus kommt nicht automatisch vor Minus. Ohne Klammern entscheidet die Reihenfolge von links nach rechts.",
         "steps": [
           "Schreibe 12 − 5 + 3 ab. Markiere die erste Rechnung ganz links.",
           "Beginne mit 12 − 5. Notiere dein eigenes Zwischenergebnis.",
           "Übernimm das folgende Rechenzeichen und die nächste Zahl unverändert. Rechne so bis zum Ende weiter.",
-          "Vergleiche anschließend mit der anderen Zeile derselben Teilaufgabe. Welche Rechnung wird dort zuerst ausgeführt? Begründe, ob die Klammer den Wert verändert."
+          "Vergleiche anschließend mit der anderen Zeile derselben Teilaufgabe. Welche Rechnung wird dort zuerst ausgeführt? Begründe, ob die Klammer den Wert verändert.",
+          "Vergleiche anschließend mit der anderen Zeile derselben Teilaufgabe. Welche Rechnung wird dort zuerst ausgeführt?"
         ],
-        "partial": "Der erste Rechenschritt ist vorgerechnet: 12 − 5 = 7. So geht deine neue Zeile weiter: 7 + 3 = □. Rechne die übrigen Schritte selbst."
+        "partial": "Der erste Rechenschritt ist vorgerechnet: 12 − 5 = 7.  Im Schreibschema steht das Zwischenergebnis in der nächsten Zeile unter der ersten Rechnung. Rechne selbst weiter."
       },
       {
         "label": "a) mit Klammer",
         "expression": "12 − (5 + 3)",
-        "strategy": "Berechne zuerst die Klammern. Danach rechnest du die übrigen Plus- und Minusaufgaben von links nach rechts.",
-        "start": "Erste Klammer: Berechne 5 + 3 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
+        "strategy": "Berechne zuerst die Klammern. Danach rechnest du die übrigen Plus- und Minusaufgaben von links nach rechts. Schreibe das Ergebnis einer Klammer in der nächsten Zeile genau unter diese Klammer. Übernimm alle übrigen Zahlen, Rechenzeichen und Klammern unverändert in dieselbe Zeile.",
+        "start": "Berechne zuerst die Klammer 5 + 3. Trage dein Ergebnis in der Zeile darunter genau unter der Klammer ein. Schreibe den gesamten Rest unverändert in diese neue Zeile ab.",
         "check": "Vergleiche jede Zeile mit 12 − (5 + 3): Sind alle Zahlen und Zeichen übernommen? Wurde jede Klammer zuerst berechnet?",
         "trap": "Achte besonders auf das Minus vor einer Klammer: Es bleibt beim Einsetzen des Klammerergebnisses stehen.",
         "steps": [
-          "Schreibe 12 − (5 + 3) ab. Markiere die Klammern und die Rechenzeichen direkt davor.",
-          "Erste Klammer: Berechne 5 + 3 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
-          "Setze deine Klammerergebnisse an die Kästchen: 12 − □. Behalte alle Rechenzeichen außerhalb der Klammern bei.",
-          "Rechne deine neue Zeile von links nach rechts. Schreibe nach jedem Rechenschritt eine neue Zeile.",
-          "Vergleiche anschließend mit der anderen Zeile derselben Teilaufgabe. Welche Rechnung wird dort zuerst ausgeführt? Begründe, ob die Klammer den Wert verändert."
+          "Schreibe 12 − (5 + 3) ab. Markiere die Klammern.",
+          "Berechne die erste Klammer: 5 + 3. Schreibe ihr Ergebnis in der nächsten Zeile genau darunter. Übernimm alles andere unverändert. Das Kästchen im Schreibschema steht für dein eigenes Ergebnis.",
+          "Wenn keine Klammer mehr übrig ist, rechne von links nach rechts. Schreibe auch dabei nur einen Rechenschritt pro Zeile und übernimm den Rest unverändert.",
+          "Vergleiche anschließend mit der anderen Zeile derselben Teilaufgabe. Welche Rechnung wird dort zuerst ausgeführt?"
         ],
-        "partial": "Die erste Klammer ist vorgerechnet: 5 + 3 = 8. So geht deine neue Zeile weiter: 12 − 8 = □. Rechne die übrigen Schritte selbst."
+        "partial": "Die erste Klammer ist vorgerechnet: 5 + 3 = 8. Darunter steht 8 genau unter dieser Klammer; alles andere wird in dieselbe Zeile übernommen. Rechne von dort selbst weiter."
       },
       {
         "label": "b) ohne Klammer",
         "expression": "34 − 12 − 7",
-        "strategy": "Hier gibt es keine Klammer. Plus und Minus sind gleichrangig: Rechne von links nach rechts.",
-        "start": "Beginne mit 34 − 12. Notiere dein eigenes Zwischenergebnis.",
+        "strategy": "Hier gibt es keine Klammer. Plus und Minus sind gleichrangig: Rechne von links nach rechts. Schreibe das Ergebnis einer Klammer in der nächsten Zeile genau unter diese Klammer. Übernimm alle übrigen Zahlen, Rechenzeichen und Klammern unverändert in dieselbe Zeile.",
+        "start": "Beginne mit 34 − 12. Notiere dein eigenes Zwischenergebnis. Schreibe dieses Zwischenergebnis in die nächste Zeile unter die erste Rechnung und übernimm den Rest unverändert.",
         "check": "Vergleiche jede Zeile mit 34 − 12 − 7: Sind alle Zahlen und Zeichen übernommen? Wurde jede Klammer zuerst berechnet?",
         "trap": "Plus kommt nicht automatisch vor Minus. Ohne Klammern entscheidet die Reihenfolge von links nach rechts.",
         "steps": [
           "Schreibe 34 − 12 − 7 ab. Markiere die erste Rechnung ganz links.",
           "Beginne mit 34 − 12. Notiere dein eigenes Zwischenergebnis.",
           "Übernimm das folgende Rechenzeichen und die nächste Zahl unverändert. Rechne so bis zum Ende weiter.",
-          "Vergleiche anschließend mit der anderen Zeile derselben Teilaufgabe. Welche Rechnung wird dort zuerst ausgeführt? Begründe, ob die Klammer den Wert verändert."
+          "Vergleiche anschließend mit der anderen Zeile derselben Teilaufgabe. Welche Rechnung wird dort zuerst ausgeführt? Begründe, ob die Klammer den Wert verändert.",
+          "Vergleiche anschließend mit der anderen Zeile derselben Teilaufgabe. Welche Rechnung wird dort zuerst ausgeführt?"
         ],
-        "partial": "Der erste Rechenschritt ist vorgerechnet: 34 − 12 = 22. So geht deine neue Zeile weiter: 22 − 7 = □. Rechne die übrigen Schritte selbst."
+        "partial": "Der erste Rechenschritt ist vorgerechnet: 34 − 12 = 22.  Im Schreibschema steht das Zwischenergebnis in der nächsten Zeile unter der ersten Rechnung. Rechne selbst weiter."
       },
       {
         "label": "b) mit Klammer",
         "expression": "34 − (12 − 7)",
-        "strategy": "Berechne zuerst die Klammern. Danach rechnest du die übrigen Plus- und Minusaufgaben von links nach rechts.",
-        "start": "Erste Klammer: Berechne 12 − 7 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
+        "strategy": "Berechne zuerst die Klammern. Danach rechnest du die übrigen Plus- und Minusaufgaben von links nach rechts. Schreibe das Ergebnis einer Klammer in der nächsten Zeile genau unter diese Klammer. Übernimm alle übrigen Zahlen, Rechenzeichen und Klammern unverändert in dieselbe Zeile.",
+        "start": "Berechne zuerst die Klammer 12 − 7. Trage dein Ergebnis in der Zeile darunter genau unter der Klammer ein. Schreibe den gesamten Rest unverändert in diese neue Zeile ab.",
         "check": "Vergleiche jede Zeile mit 34 − (12 − 7): Sind alle Zahlen und Zeichen übernommen? Wurde jede Klammer zuerst berechnet?",
         "trap": "Achte besonders auf das Minus vor einer Klammer: Es bleibt beim Einsetzen des Klammerergebnisses stehen.",
         "steps": [
-          "Schreibe 34 − (12 − 7) ab. Markiere die Klammern und die Rechenzeichen direkt davor.",
-          "Erste Klammer: Berechne 12 − 7 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
-          "Setze deine Klammerergebnisse an die Kästchen: 34 − □. Behalte alle Rechenzeichen außerhalb der Klammern bei.",
-          "Rechne deine neue Zeile von links nach rechts. Schreibe nach jedem Rechenschritt eine neue Zeile.",
-          "Vergleiche anschließend mit der anderen Zeile derselben Teilaufgabe. Welche Rechnung wird dort zuerst ausgeführt? Begründe, ob die Klammer den Wert verändert."
+          "Schreibe 34 − (12 − 7) ab. Markiere die Klammern.",
+          "Berechne die erste Klammer: 12 − 7. Schreibe ihr Ergebnis in der nächsten Zeile genau darunter. Übernimm alles andere unverändert. Das Kästchen im Schreibschema steht für dein eigenes Ergebnis.",
+          "Wenn keine Klammer mehr übrig ist, rechne von links nach rechts. Schreibe auch dabei nur einen Rechenschritt pro Zeile und übernimm den Rest unverändert.",
+          "Vergleiche anschließend mit der anderen Zeile derselben Teilaufgabe. Welche Rechnung wird dort zuerst ausgeführt?"
         ],
-        "partial": "Die erste Klammer ist vorgerechnet: 12 − 7 = 5. So geht deine neue Zeile weiter: 34 − 5 = □. Rechne die übrigen Schritte selbst."
+        "partial": "Die erste Klammer ist vorgerechnet: 12 − 7 = 5. Darunter steht 5 genau unter dieser Klammer; alles andere wird in dieselbe Zeile übernommen. Rechne von dort selbst weiter."
       },
       {
         "label": "c) ohne Klammer",
         "expression": "33 + 7 − 4",
-        "strategy": "Hier gibt es keine Klammer. Plus und Minus sind gleichrangig: Rechne von links nach rechts.",
-        "start": "Beginne mit 33 + 7. Notiere dein eigenes Zwischenergebnis.",
+        "strategy": "Hier gibt es keine Klammer. Plus und Minus sind gleichrangig: Rechne von links nach rechts. Schreibe das Ergebnis einer Klammer in der nächsten Zeile genau unter diese Klammer. Übernimm alle übrigen Zahlen, Rechenzeichen und Klammern unverändert in dieselbe Zeile.",
+        "start": "Beginne mit 33 + 7. Notiere dein eigenes Zwischenergebnis. Schreibe dieses Zwischenergebnis in die nächste Zeile unter die erste Rechnung und übernimm den Rest unverändert.",
         "check": "Vergleiche jede Zeile mit 33 + 7 − 4: Sind alle Zahlen und Zeichen übernommen? Wurde jede Klammer zuerst berechnet?",
         "trap": "Plus kommt nicht automatisch vor Minus. Ohne Klammern entscheidet die Reihenfolge von links nach rechts.",
         "steps": [
           "Schreibe 33 + 7 − 4 ab. Markiere die erste Rechnung ganz links.",
           "Beginne mit 33 + 7. Notiere dein eigenes Zwischenergebnis.",
           "Übernimm das folgende Rechenzeichen und die nächste Zahl unverändert. Rechne so bis zum Ende weiter.",
-          "Vergleiche anschließend mit der anderen Zeile derselben Teilaufgabe. Welche Rechnung wird dort zuerst ausgeführt? Begründe, ob die Klammer den Wert verändert."
+          "Vergleiche anschließend mit der anderen Zeile derselben Teilaufgabe. Welche Rechnung wird dort zuerst ausgeführt? Begründe, ob die Klammer den Wert verändert.",
+          "Vergleiche anschließend mit der anderen Zeile derselben Teilaufgabe. Welche Rechnung wird dort zuerst ausgeführt?"
         ],
-        "partial": "Der erste Rechenschritt ist vorgerechnet: 33 + 7 = 40. So geht deine neue Zeile weiter: 40 − 4 = □. Rechne die übrigen Schritte selbst."
+        "partial": "Der erste Rechenschritt ist vorgerechnet: 33 + 7 = 40.  Im Schreibschema steht das Zwischenergebnis in der nächsten Zeile unter der ersten Rechnung. Rechne selbst weiter."
       },
       {
         "label": "c) mit Klammer",
         "expression": "33 + (7 − 4)",
-        "strategy": "Berechne zuerst die Klammern. Danach rechnest du die übrigen Plus- und Minusaufgaben von links nach rechts.",
-        "start": "Erste Klammer: Berechne 7 − 4 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
+        "strategy": "Berechne zuerst die Klammern. Danach rechnest du die übrigen Plus- und Minusaufgaben von links nach rechts. Schreibe das Ergebnis einer Klammer in der nächsten Zeile genau unter diese Klammer. Übernimm alle übrigen Zahlen, Rechenzeichen und Klammern unverändert in dieselbe Zeile.",
+        "start": "Berechne zuerst die Klammer 7 − 4. Trage dein Ergebnis in der Zeile darunter genau unter der Klammer ein. Schreibe den gesamten Rest unverändert in diese neue Zeile ab.",
         "check": "Vergleiche jede Zeile mit 33 + (7 − 4): Sind alle Zahlen und Zeichen übernommen? Wurde jede Klammer zuerst berechnet?",
         "trap": "Plus kommt nicht automatisch vor Minus. Ohne Klammern entscheidet die Reihenfolge von links nach rechts.",
         "steps": [
-          "Schreibe 33 + (7 − 4) ab. Markiere die Klammern und die Rechenzeichen direkt davor.",
-          "Erste Klammer: Berechne 7 − 4 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
-          "Setze deine Klammerergebnisse an die Kästchen: 33 + □. Behalte alle Rechenzeichen außerhalb der Klammern bei.",
-          "Rechne deine neue Zeile von links nach rechts. Schreibe nach jedem Rechenschritt eine neue Zeile.",
-          "Vergleiche anschließend mit der anderen Zeile derselben Teilaufgabe. Welche Rechnung wird dort zuerst ausgeführt? Begründe, ob die Klammer den Wert verändert."
+          "Schreibe 33 + (7 − 4) ab. Markiere die Klammern.",
+          "Berechne die erste Klammer: 7 − 4. Schreibe ihr Ergebnis in der nächsten Zeile genau darunter. Übernimm alles andere unverändert. Das Kästchen im Schreibschema steht für dein eigenes Ergebnis.",
+          "Wenn keine Klammer mehr übrig ist, rechne von links nach rechts. Schreibe auch dabei nur einen Rechenschritt pro Zeile und übernimm den Rest unverändert.",
+          "Vergleiche anschließend mit der anderen Zeile derselben Teilaufgabe. Welche Rechnung wird dort zuerst ausgeführt?"
         ],
-        "partial": "Die erste Klammer ist vorgerechnet: 7 − 4 = 3. So geht deine neue Zeile weiter: 33 + 3 = □. Rechne die übrigen Schritte selbst."
+        "partial": "Die erste Klammer ist vorgerechnet: 7 − 4 = 3. Darunter steht 3 genau unter dieser Klammer; alles andere wird in dieselbe Zeile übernommen. Rechne von dort selbst weiter."
       },
       {
         "label": "d) ohne Klammer",
         "expression": "49 + 21 + 5",
-        "strategy": "Hier gibt es keine Klammer. Plus und Minus sind gleichrangig: Rechne von links nach rechts.",
-        "start": "Beginne mit 49 + 21. Notiere dein eigenes Zwischenergebnis.",
+        "strategy": "Hier gibt es keine Klammer. Plus und Minus sind gleichrangig: Rechne von links nach rechts. Schreibe das Ergebnis einer Klammer in der nächsten Zeile genau unter diese Klammer. Übernimm alle übrigen Zahlen, Rechenzeichen und Klammern unverändert in dieselbe Zeile.",
+        "start": "Beginne mit 49 + 21. Notiere dein eigenes Zwischenergebnis. Schreibe dieses Zwischenergebnis in die nächste Zeile unter die erste Rechnung und übernimm den Rest unverändert.",
         "check": "Vergleiche jede Zeile mit 49 + 21 + 5: Sind alle Zahlen und Zeichen übernommen? Wurde jede Klammer zuerst berechnet?",
         "trap": "Plus kommt nicht automatisch vor Minus. Ohne Klammern entscheidet die Reihenfolge von links nach rechts.",
         "steps": [
           "Schreibe 49 + 21 + 5 ab. Markiere die erste Rechnung ganz links.",
           "Beginne mit 49 + 21. Notiere dein eigenes Zwischenergebnis.",
           "Übernimm das folgende Rechenzeichen und die nächste Zahl unverändert. Rechne so bis zum Ende weiter.",
-          "Vergleiche anschließend mit der anderen Zeile derselben Teilaufgabe. Welche Rechnung wird dort zuerst ausgeführt? Begründe, ob die Klammer den Wert verändert."
+          "Vergleiche anschließend mit der anderen Zeile derselben Teilaufgabe. Welche Rechnung wird dort zuerst ausgeführt? Begründe, ob die Klammer den Wert verändert.",
+          "Vergleiche anschließend mit der anderen Zeile derselben Teilaufgabe. Welche Rechnung wird dort zuerst ausgeführt?"
         ],
-        "partial": "Der erste Rechenschritt ist vorgerechnet: 49 + 21 = 70. So geht deine neue Zeile weiter: 70 + 5 = □. Rechne die übrigen Schritte selbst."
+        "partial": "Der erste Rechenschritt ist vorgerechnet: 49 + 21 = 70.  Im Schreibschema steht das Zwischenergebnis in der nächsten Zeile unter der ersten Rechnung. Rechne selbst weiter."
       },
       {
         "label": "d) mit Klammer",
         "expression": "49 + (21 + 5)",
-        "strategy": "Berechne zuerst die Klammern. Danach rechnest du die übrigen Plus- und Minusaufgaben von links nach rechts.",
-        "start": "Erste Klammer: Berechne 21 + 5 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
+        "strategy": "Berechne zuerst die Klammern. Danach rechnest du die übrigen Plus- und Minusaufgaben von links nach rechts. Schreibe das Ergebnis einer Klammer in der nächsten Zeile genau unter diese Klammer. Übernimm alle übrigen Zahlen, Rechenzeichen und Klammern unverändert in dieselbe Zeile.",
+        "start": "Berechne zuerst die Klammer 21 + 5. Trage dein Ergebnis in der Zeile darunter genau unter der Klammer ein. Schreibe den gesamten Rest unverändert in diese neue Zeile ab.",
         "check": "Vergleiche jede Zeile mit 49 + (21 + 5): Sind alle Zahlen und Zeichen übernommen? Wurde jede Klammer zuerst berechnet?",
         "trap": "Plus kommt nicht automatisch vor Minus. Ohne Klammern entscheidet die Reihenfolge von links nach rechts.",
         "steps": [
-          "Schreibe 49 + (21 + 5) ab. Markiere die Klammern und die Rechenzeichen direkt davor.",
-          "Erste Klammer: Berechne 21 + 5 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
-          "Setze deine Klammerergebnisse an die Kästchen: 49 + □. Behalte alle Rechenzeichen außerhalb der Klammern bei.",
-          "Rechne deine neue Zeile von links nach rechts. Schreibe nach jedem Rechenschritt eine neue Zeile.",
-          "Vergleiche anschließend mit der anderen Zeile derselben Teilaufgabe. Welche Rechnung wird dort zuerst ausgeführt? Begründe, ob die Klammer den Wert verändert."
+          "Schreibe 49 + (21 + 5) ab. Markiere die Klammern.",
+          "Berechne die erste Klammer: 21 + 5. Schreibe ihr Ergebnis in der nächsten Zeile genau darunter. Übernimm alles andere unverändert. Das Kästchen im Schreibschema steht für dein eigenes Ergebnis.",
+          "Wenn keine Klammer mehr übrig ist, rechne von links nach rechts. Schreibe auch dabei nur einen Rechenschritt pro Zeile und übernimm den Rest unverändert.",
+          "Vergleiche anschließend mit der anderen Zeile derselben Teilaufgabe. Welche Rechnung wird dort zuerst ausgeführt?"
         ],
-        "partial": "Die erste Klammer ist vorgerechnet: 21 + 5 = 26. So geht deine neue Zeile weiter: 49 + 26 = □. Rechne die übrigen Schritte selbst."
+        "partial": "Die erste Klammer ist vorgerechnet: 21 + 5 = 26. Darunter steht 26 genau unter dieser Klammer; alles andere wird in dieselbe Zeile übernommen. Rechne von dort selbst weiter."
       }
     ],
     "variant": "left"
@@ -644,98 +644,92 @@ window.taskHelpData = {
       {
         "label": "a) erste Zeile",
         "expression": "25 − (12 + 11) + (10 − 5)",
-        "strategy": "Berechne zuerst die Klammern. Danach rechnest du die übrigen Plus- und Minusaufgaben von links nach rechts.",
-        "start": "Erste Klammer: Berechne 12 + 11 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
+        "strategy": "Berechne zuerst die Klammern. Danach rechnest du die übrigen Plus- und Minusaufgaben von links nach rechts. Schreibe das Ergebnis einer Klammer in der nächsten Zeile genau unter diese Klammer. Übernimm alle übrigen Zahlen, Rechenzeichen und Klammern unverändert in dieselbe Zeile.",
+        "start": "Berechne zuerst die Klammer 12 + 11. Trage dein Ergebnis in der Zeile darunter genau unter der Klammer ein. Schreibe den gesamten Rest unverändert in diese neue Zeile ab.",
         "check": "Vergleiche jede Zeile mit 25 − (12 + 11) + (10 − 5): Sind alle Zahlen und Zeichen übernommen? Wurde jede Klammer zuerst berechnet?",
         "trap": "Achte besonders auf das Minus vor einer Klammer: Es bleibt beim Einsetzen des Klammerergebnisses stehen.",
         "steps": [
-          "Schreibe 25 − (12 + 11) + (10 − 5) ab. Markiere die Klammern und die Rechenzeichen direkt davor.",
-          "Erste Klammer: Berechne 12 + 11 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
-          "Zweite Klammer: Berechne 10 − 5 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
-          "Setze deine Klammerergebnisse an die Kästchen: 25 − □ + □. Behalte alle Rechenzeichen außerhalb der Klammern bei.",
-          "Rechne deine neue Zeile von links nach rechts. Schreibe nach jedem Rechenschritt eine neue Zeile."
+          "Schreibe 25 − (12 + 11) + (10 − 5) ab. Markiere die Klammern.",
+          "Berechne die erste Klammer: 12 + 11. Schreibe ihr Ergebnis in der nächsten Zeile genau darunter. Übernimm alles andere unverändert. Das Kästchen im Schreibschema steht für dein eigenes Ergebnis.",
+          "Berechne die nächste Klammer: 10 − 5. Schreibe ihr Ergebnis in der nächsten Zeile genau darunter. Übernimm alles andere unverändert. Das Kästchen im Schreibschema steht für dein eigenes Ergebnis.",
+          "Wenn keine Klammer mehr übrig ist, rechne von links nach rechts. Schreibe auch dabei nur einen Rechenschritt pro Zeile und übernimm den Rest unverändert."
         ],
-        "partial": "Die erste Klammer ist vorgerechnet: 12 + 11 = 23. So geht deine neue Zeile weiter: 25 − 23 + (10 − 5) = □. Rechne die übrigen Schritte selbst."
+        "partial": "Die erste Klammer ist vorgerechnet: 12 + 11 = 23. Darunter steht 23 genau unter dieser Klammer; alles andere wird in dieselbe Zeile übernommen. Rechne von dort selbst weiter."
       },
       {
         "label": "a) zweite Zeile",
         "expression": "25 + (12 − 11) − (10 + 5)",
-        "strategy": "Berechne zuerst die Klammern. Danach rechnest du die übrigen Plus- und Minusaufgaben von links nach rechts.",
-        "start": "Erste Klammer: Berechne 12 − 11 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
+        "strategy": "Berechne zuerst die Klammern. Danach rechnest du die übrigen Plus- und Minusaufgaben von links nach rechts. Schreibe das Ergebnis einer Klammer in der nächsten Zeile genau unter diese Klammer. Übernimm alle übrigen Zahlen, Rechenzeichen und Klammern unverändert in dieselbe Zeile.",
+        "start": "Berechne zuerst die Klammer 12 − 11. Trage dein Ergebnis in der Zeile darunter genau unter der Klammer ein. Schreibe den gesamten Rest unverändert in diese neue Zeile ab.",
         "check": "Vergleiche jede Zeile mit 25 + (12 − 11) − (10 + 5): Sind alle Zahlen und Zeichen übernommen? Wurde jede Klammer zuerst berechnet?",
         "trap": "Achte besonders auf das Minus vor einer Klammer: Es bleibt beim Einsetzen des Klammerergebnisses stehen.",
         "steps": [
-          "Schreibe 25 + (12 − 11) − (10 + 5) ab. Markiere die Klammern und die Rechenzeichen direkt davor.",
-          "Erste Klammer: Berechne 12 − 11 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
-          "Zweite Klammer: Berechne 10 + 5 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
-          "Setze deine Klammerergebnisse an die Kästchen: 25 + □ − □. Behalte alle Rechenzeichen außerhalb der Klammern bei.",
-          "Rechne deine neue Zeile von links nach rechts. Schreibe nach jedem Rechenschritt eine neue Zeile."
+          "Schreibe 25 + (12 − 11) − (10 + 5) ab. Markiere die Klammern.",
+          "Berechne die erste Klammer: 12 − 11. Schreibe ihr Ergebnis in der nächsten Zeile genau darunter. Übernimm alles andere unverändert. Das Kästchen im Schreibschema steht für dein eigenes Ergebnis.",
+          "Berechne die nächste Klammer: 10 + 5. Schreibe ihr Ergebnis in der nächsten Zeile genau darunter. Übernimm alles andere unverändert. Das Kästchen im Schreibschema steht für dein eigenes Ergebnis.",
+          "Wenn keine Klammer mehr übrig ist, rechne von links nach rechts. Schreibe auch dabei nur einen Rechenschritt pro Zeile und übernimm den Rest unverändert."
         ],
-        "partial": "Die erste Klammer ist vorgerechnet: 12 − 11 = 1. So geht deine neue Zeile weiter: 25 + 1 − (10 + 5) = □. Rechne die übrigen Schritte selbst."
+        "partial": "Die erste Klammer ist vorgerechnet: 12 − 11 = 1. Darunter steht 1 genau unter dieser Klammer; alles andere wird in dieselbe Zeile übernommen. Rechne von dort selbst weiter."
       },
       {
         "label": "a) dritte Zeile",
         "expression": "25 − (12 − 11) + (10 + 5)",
-        "strategy": "Berechne zuerst die Klammern. Danach rechnest du die übrigen Plus- und Minusaufgaben von links nach rechts.",
-        "start": "Erste Klammer: Berechne 12 − 11 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
+        "strategy": "Berechne zuerst die Klammern. Danach rechnest du die übrigen Plus- und Minusaufgaben von links nach rechts. Schreibe das Ergebnis einer Klammer in der nächsten Zeile genau unter diese Klammer. Übernimm alle übrigen Zahlen, Rechenzeichen und Klammern unverändert in dieselbe Zeile.",
+        "start": "Berechne zuerst die Klammer 12 − 11. Trage dein Ergebnis in der Zeile darunter genau unter der Klammer ein. Schreibe den gesamten Rest unverändert in diese neue Zeile ab.",
         "check": "Vergleiche jede Zeile mit 25 − (12 − 11) + (10 + 5): Sind alle Zahlen und Zeichen übernommen? Wurde jede Klammer zuerst berechnet?",
         "trap": "Achte besonders auf das Minus vor einer Klammer: Es bleibt beim Einsetzen des Klammerergebnisses stehen.",
         "steps": [
-          "Schreibe 25 − (12 − 11) + (10 + 5) ab. Markiere die Klammern und die Rechenzeichen direkt davor.",
-          "Erste Klammer: Berechne 12 − 11 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
-          "Zweite Klammer: Berechne 10 + 5 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
-          "Setze deine Klammerergebnisse an die Kästchen: 25 − □ + □. Behalte alle Rechenzeichen außerhalb der Klammern bei.",
-          "Rechne deine neue Zeile von links nach rechts. Schreibe nach jedem Rechenschritt eine neue Zeile."
+          "Schreibe 25 − (12 − 11) + (10 + 5) ab. Markiere die Klammern.",
+          "Berechne die erste Klammer: 12 − 11. Schreibe ihr Ergebnis in der nächsten Zeile genau darunter. Übernimm alles andere unverändert. Das Kästchen im Schreibschema steht für dein eigenes Ergebnis.",
+          "Berechne die nächste Klammer: 10 + 5. Schreibe ihr Ergebnis in der nächsten Zeile genau darunter. Übernimm alles andere unverändert. Das Kästchen im Schreibschema steht für dein eigenes Ergebnis.",
+          "Wenn keine Klammer mehr übrig ist, rechne von links nach rechts. Schreibe auch dabei nur einen Rechenschritt pro Zeile und übernimm den Rest unverändert."
         ],
-        "partial": "Die erste Klammer ist vorgerechnet: 12 − 11 = 1. So geht deine neue Zeile weiter: 25 − 1 + (10 + 5) = □. Rechne die übrigen Schritte selbst."
+        "partial": "Die erste Klammer ist vorgerechnet: 12 − 11 = 1. Darunter steht 1 genau unter dieser Klammer; alles andere wird in dieselbe Zeile übernommen. Rechne von dort selbst weiter."
       },
       {
         "label": "b) erste Zeile",
         "expression": "49 + (24 − 13) + 5 + (20 − 8)",
-        "strategy": "Berechne zuerst die Klammern. Danach rechnest du die übrigen Plus- und Minusaufgaben von links nach rechts.",
-        "start": "Erste Klammer: Berechne 24 − 13 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
+        "strategy": "Berechne zuerst die Klammern. Danach rechnest du die übrigen Plus- und Minusaufgaben von links nach rechts. Schreibe das Ergebnis einer Klammer in der nächsten Zeile genau unter diese Klammer. Übernimm alle übrigen Zahlen, Rechenzeichen und Klammern unverändert in dieselbe Zeile.",
+        "start": "Berechne zuerst die Klammer 24 − 13. Trage dein Ergebnis in der Zeile darunter genau unter der Klammer ein. Schreibe den gesamten Rest unverändert in diese neue Zeile ab.",
         "check": "Vergleiche jede Zeile mit 49 + (24 − 13) + 5 + (20 − 8): Sind alle Zahlen und Zeichen übernommen? Wurde jede Klammer zuerst berechnet?",
         "trap": "Plus kommt nicht automatisch vor Minus. Ohne Klammern entscheidet die Reihenfolge von links nach rechts.",
         "steps": [
-          "Schreibe 49 + (24 − 13) + 5 + (20 − 8) ab. Markiere die Klammern und die Rechenzeichen direkt davor.",
-          "Erste Klammer: Berechne 24 − 13 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
-          "Zweite Klammer: Berechne 20 − 8 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
-          "Setze deine Klammerergebnisse an die Kästchen: 49 + □ + 5 + □. Behalte alle Rechenzeichen außerhalb der Klammern bei.",
-          "Rechne deine neue Zeile von links nach rechts. Schreibe nach jedem Rechenschritt eine neue Zeile."
+          "Schreibe 49 + (24 − 13) + 5 + (20 − 8) ab. Markiere die Klammern.",
+          "Berechne die erste Klammer: 24 − 13. Schreibe ihr Ergebnis in der nächsten Zeile genau darunter. Übernimm alles andere unverändert. Das Kästchen im Schreibschema steht für dein eigenes Ergebnis.",
+          "Berechne die nächste Klammer: 20 − 8. Schreibe ihr Ergebnis in der nächsten Zeile genau darunter. Übernimm alles andere unverändert. Das Kästchen im Schreibschema steht für dein eigenes Ergebnis.",
+          "Wenn keine Klammer mehr übrig ist, rechne von links nach rechts. Schreibe auch dabei nur einen Rechenschritt pro Zeile und übernimm den Rest unverändert."
         ],
-        "partial": "Die erste Klammer ist vorgerechnet: 24 − 13 = 11. So geht deine neue Zeile weiter: 49 + 11 + 5 + (20 − 8) = □. Rechne die übrigen Schritte selbst."
+        "partial": "Die erste Klammer ist vorgerechnet: 24 − 13 = 11. Darunter steht 11 genau unter dieser Klammer; alles andere wird in dieselbe Zeile übernommen. Rechne von dort selbst weiter."
       },
       {
         "label": "b) zweite Zeile",
         "expression": "49 − (24 − 13) − 5 − (20 − 8)",
-        "strategy": "Berechne zuerst die Klammern. Danach rechnest du die übrigen Plus- und Minusaufgaben von links nach rechts.",
-        "start": "Erste Klammer: Berechne 24 − 13 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
+        "strategy": "Berechne zuerst die Klammern. Danach rechnest du die übrigen Plus- und Minusaufgaben von links nach rechts. Schreibe das Ergebnis einer Klammer in der nächsten Zeile genau unter diese Klammer. Übernimm alle übrigen Zahlen, Rechenzeichen und Klammern unverändert in dieselbe Zeile.",
+        "start": "Berechne zuerst die Klammer 24 − 13. Trage dein Ergebnis in der Zeile darunter genau unter der Klammer ein. Schreibe den gesamten Rest unverändert in diese neue Zeile ab.",
         "check": "Vergleiche jede Zeile mit 49 − (24 − 13) − 5 − (20 − 8): Sind alle Zahlen und Zeichen übernommen? Wurde jede Klammer zuerst berechnet?",
         "trap": "Achte besonders auf das Minus vor einer Klammer: Es bleibt beim Einsetzen des Klammerergebnisses stehen.",
         "steps": [
-          "Schreibe 49 − (24 − 13) − 5 − (20 − 8) ab. Markiere die Klammern und die Rechenzeichen direkt davor.",
-          "Erste Klammer: Berechne 24 − 13 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
-          "Zweite Klammer: Berechne 20 − 8 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
-          "Setze deine Klammerergebnisse an die Kästchen: 49 − □ − 5 − □. Behalte alle Rechenzeichen außerhalb der Klammern bei.",
-          "Rechne deine neue Zeile von links nach rechts. Schreibe nach jedem Rechenschritt eine neue Zeile."
+          "Schreibe 49 − (24 − 13) − 5 − (20 − 8) ab. Markiere die Klammern.",
+          "Berechne die erste Klammer: 24 − 13. Schreibe ihr Ergebnis in der nächsten Zeile genau darunter. Übernimm alles andere unverändert. Das Kästchen im Schreibschema steht für dein eigenes Ergebnis.",
+          "Berechne die nächste Klammer: 20 − 8. Schreibe ihr Ergebnis in der nächsten Zeile genau darunter. Übernimm alles andere unverändert. Das Kästchen im Schreibschema steht für dein eigenes Ergebnis.",
+          "Wenn keine Klammer mehr übrig ist, rechne von links nach rechts. Schreibe auch dabei nur einen Rechenschritt pro Zeile und übernimm den Rest unverändert."
         ],
-        "partial": "Die erste Klammer ist vorgerechnet: 24 − 13 = 11. So geht deine neue Zeile weiter: 49 − 11 − 5 − (20 − 8) = □. Rechne die übrigen Schritte selbst."
+        "partial": "Die erste Klammer ist vorgerechnet: 24 − 13 = 11. Darunter steht 11 genau unter dieser Klammer; alles andere wird in dieselbe Zeile übernommen. Rechne von dort selbst weiter."
       },
       {
         "label": "b) dritte Zeile",
         "expression": "49 − (24 + 13) − 5 + (20 − 8)",
-        "strategy": "Berechne zuerst die Klammern. Danach rechnest du die übrigen Plus- und Minusaufgaben von links nach rechts.",
-        "start": "Erste Klammer: Berechne 24 + 13 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
+        "strategy": "Berechne zuerst die Klammern. Danach rechnest du die übrigen Plus- und Minusaufgaben von links nach rechts. Schreibe das Ergebnis einer Klammer in der nächsten Zeile genau unter diese Klammer. Übernimm alle übrigen Zahlen, Rechenzeichen und Klammern unverändert in dieselbe Zeile.",
+        "start": "Berechne zuerst die Klammer 24 + 13. Trage dein Ergebnis in der Zeile darunter genau unter der Klammer ein. Schreibe den gesamten Rest unverändert in diese neue Zeile ab.",
         "check": "Vergleiche jede Zeile mit 49 − (24 + 13) − 5 + (20 − 8): Sind alle Zahlen und Zeichen übernommen? Wurde jede Klammer zuerst berechnet?",
         "trap": "Achte besonders auf das Minus vor einer Klammer: Es bleibt beim Einsetzen des Klammerergebnisses stehen.",
         "steps": [
-          "Schreibe 49 − (24 + 13) − 5 + (20 − 8) ab. Markiere die Klammern und die Rechenzeichen direkt davor.",
-          "Erste Klammer: Berechne 24 + 13 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
-          "Zweite Klammer: Berechne 20 − 8 in deinem Heft. Schreibe dein Ergebnis über diese Klammer.",
-          "Setze deine Klammerergebnisse an die Kästchen: 49 − □ − 5 + □. Behalte alle Rechenzeichen außerhalb der Klammern bei.",
-          "Rechne deine neue Zeile von links nach rechts. Schreibe nach jedem Rechenschritt eine neue Zeile."
+          "Schreibe 49 − (24 + 13) − 5 + (20 − 8) ab. Markiere die Klammern.",
+          "Berechne die erste Klammer: 24 + 13. Schreibe ihr Ergebnis in der nächsten Zeile genau darunter. Übernimm alles andere unverändert. Das Kästchen im Schreibschema steht für dein eigenes Ergebnis.",
+          "Berechne die nächste Klammer: 20 − 8. Schreibe ihr Ergebnis in der nächsten Zeile genau darunter. Übernimm alles andere unverändert. Das Kästchen im Schreibschema steht für dein eigenes Ergebnis.",
+          "Wenn keine Klammer mehr übrig ist, rechne von links nach rechts. Schreibe auch dabei nur einen Rechenschritt pro Zeile und übernimm den Rest unverändert."
         ],
-        "partial": "Die erste Klammer ist vorgerechnet: 24 + 13 = 37. So geht deine neue Zeile weiter: 49 − 37 − 5 + (20 − 8) = □. Rechne die übrigen Schritte selbst."
+        "partial": "Die erste Klammer ist vorgerechnet: 24 + 13 = 37. Darunter steht 37 genau unter dieser Klammer; alles andere wird in dieselbe Zeile übernommen. Rechne von dort selbst weiter."
       }
     ],
     "variant": "left"
@@ -747,7 +741,7 @@ window.taskHelpData = {
       {
         "label": "a)",
         "expression": "7 + 12 + 23",
-        "strategy": "Suche in 7 + 12 + 23 Summanden, die zusammen einen glatten Zehner oder Hunderter ergeben. Bei einer Summe darfst du Summanden vertauschen und zusammenfassen.",
+        "strategy": "Suche in 7 + 12 + 23 Summanden, die zusammen einen glatten Zehner oder Hunderter ergeben. Bei einer Summe darfst du Summanden vertauschen und zusammenfassen. Nach dem Umordnen gilt: Schreibe das Ergebnis eines Zahlenpaars in der nächsten Zeile genau unter seine Klammer. Übernimm alle übrigen Summanden und Pluszeichen unverändert.",
         "start": "Schau dir 7 und 23 an. Warum passen diese Zahlen gut zusammen? Berechne ihre Summe selbst.",
         "check": "Vergleiche deine neue Reihenfolge mit 7 + 12 + 23. Ist jede Zahl genau einmal enthalten? Prüfe durch Nachrechnen in der ursprünglichen Reihenfolge.",
         "trap": "Beim Umordnen darf kein Summand verloren gehen oder doppelt vorkommen. Diese Gesetze gelten hier, weil ausschließlich addiert wird.",
@@ -755,14 +749,14 @@ window.taskHelpData = {
           "Schreibe 7 + 12 + 23 ab. Sind alle Rechenzeichen Pluszeichen?",
           "Schau dir 7 und 23 an. Warum passen diese Zahlen gut zusammen? Berechne ihre Summe selbst.",
           "Schreibe die ganze Aufgabe mit deinen Klammern neu auf. Jede ursprüngliche Zahl muss genau einmal vorkommen.",
-          "Berechne zuerst deine Klammern und addiere danach die übrigen Summanden. Notiere die Rechenschritte in deinem Heft."
+          "Berechne eine Klammer. Schreibe ihr Ergebnis in der nächsten Zeile genau unter diese Klammer und übernimm den Rest unverändert. Wiederhole das für die nächste Klammer. Rechne danach selbst weiter."
         ],
-        "partial": "Ein günstiges Zahlenpaar ist vorgerechnet: 7 + 23 = 30. Damit kannst du die Aufgabe so weiterschreiben: 30 + 12 = □. Rechne selbst weiter."
+        "partial": "Ein günstiges Zahlenpaar ist vorgerechnet: 7 + 23 = 30.  Das Ergebnis des Zahlenpaars steht in der nächsten Zeile unter seiner Klammer. Die übrigen Summanden bleiben an ihrem Platz. Rechne selbst weiter."
       },
       {
         "label": "b)",
         "expression": "24 + 15 + 36",
-        "strategy": "Suche in 24 + 15 + 36 Summanden, die zusammen einen glatten Zehner oder Hunderter ergeben. Bei einer Summe darfst du Summanden vertauschen und zusammenfassen.",
+        "strategy": "Suche in 24 + 15 + 36 Summanden, die zusammen einen glatten Zehner oder Hunderter ergeben. Bei einer Summe darfst du Summanden vertauschen und zusammenfassen. Nach dem Umordnen gilt: Schreibe das Ergebnis eines Zahlenpaars in der nächsten Zeile genau unter seine Klammer. Übernimm alle übrigen Summanden und Pluszeichen unverändert.",
         "start": "Schau dir 24 und 36 an. Warum passen diese Zahlen gut zusammen? Berechne ihre Summe selbst.",
         "check": "Vergleiche deine neue Reihenfolge mit 24 + 15 + 36. Ist jede Zahl genau einmal enthalten? Prüfe durch Nachrechnen in der ursprünglichen Reihenfolge.",
         "trap": "Beim Umordnen darf kein Summand verloren gehen oder doppelt vorkommen. Diese Gesetze gelten hier, weil ausschließlich addiert wird.",
@@ -770,9 +764,9 @@ window.taskHelpData = {
           "Schreibe 24 + 15 + 36 ab. Sind alle Rechenzeichen Pluszeichen?",
           "Schau dir 24 und 36 an. Warum passen diese Zahlen gut zusammen? Berechne ihre Summe selbst.",
           "Schreibe die ganze Aufgabe mit deinen Klammern neu auf. Jede ursprüngliche Zahl muss genau einmal vorkommen.",
-          "Berechne zuerst deine Klammern und addiere danach die übrigen Summanden. Notiere die Rechenschritte in deinem Heft."
+          "Berechne eine Klammer. Schreibe ihr Ergebnis in der nächsten Zeile genau unter diese Klammer und übernimm den Rest unverändert. Wiederhole das für die nächste Klammer. Rechne danach selbst weiter."
         ],
-        "partial": "Ein günstiges Zahlenpaar ist vorgerechnet: 24 + 36 = 60. Damit kannst du die Aufgabe so weiterschreiben: 60 + 15 = □. Rechne selbst weiter."
+        "partial": "Ein günstiges Zahlenpaar ist vorgerechnet: 24 + 36 = 60.  Das Ergebnis des Zahlenpaars steht in der nächsten Zeile unter seiner Klammer. Die übrigen Summanden bleiben an ihrem Platz. Rechne selbst weiter."
       }
     ]
   },
@@ -783,7 +777,7 @@ window.taskHelpData = {
       {
         "label": "a)",
         "expression": "22 + 27 + 23",
-        "strategy": "Suche in 22 + 27 + 23 Summanden, die zusammen einen glatten Zehner oder Hunderter ergeben. Bei einer Summe darfst du Summanden vertauschen und zusammenfassen.",
+        "strategy": "Suche in 22 + 27 + 23 Summanden, die zusammen einen glatten Zehner oder Hunderter ergeben. Bei einer Summe darfst du Summanden vertauschen und zusammenfassen. Nach dem Umordnen gilt: Schreibe das Ergebnis eines Zahlenpaars in der nächsten Zeile genau unter seine Klammer. Übernimm alle übrigen Summanden und Pluszeichen unverändert.",
         "start": "Schau dir 27 und 23 an. Warum passen diese Zahlen gut zusammen? Berechne ihre Summe selbst.",
         "check": "Vergleiche deine neue Reihenfolge mit 22 + 27 + 23. Ist jede Zahl genau einmal enthalten? Prüfe durch Nachrechnen in der ursprünglichen Reihenfolge.",
         "trap": "Beim Umordnen darf kein Summand verloren gehen oder doppelt vorkommen. Diese Gesetze gelten hier, weil ausschließlich addiert wird.",
@@ -791,14 +785,14 @@ window.taskHelpData = {
           "Schreibe 22 + 27 + 23 ab. Sind alle Rechenzeichen Pluszeichen?",
           "Schau dir 27 und 23 an. Warum passen diese Zahlen gut zusammen? Berechne ihre Summe selbst.",
           "Schreibe die ganze Aufgabe mit deinen Klammern neu auf. Jede ursprüngliche Zahl muss genau einmal vorkommen.",
-          "Berechne zuerst deine Klammern und addiere danach die übrigen Summanden. Notiere die Rechenschritte in deinem Heft."
+          "Berechne eine Klammer. Schreibe ihr Ergebnis in der nächsten Zeile genau unter diese Klammer und übernimm den Rest unverändert. Wiederhole das für die nächste Klammer. Rechne danach selbst weiter."
         ],
-        "partial": "Ein günstiges Zahlenpaar ist vorgerechnet: 27 + 23 = 50. Damit kannst du die Aufgabe so weiterschreiben: 50 + 22 = □. Rechne selbst weiter."
+        "partial": "Ein günstiges Zahlenpaar ist vorgerechnet: 27 + 23 = 50.  Das Ergebnis des Zahlenpaars steht in der nächsten Zeile unter seiner Klammer. Die übrigen Summanden bleiben an ihrem Platz. Rechne selbst weiter."
       },
       {
         "label": "b)",
         "expression": "37 + 49 + 11",
-        "strategy": "Suche in 37 + 49 + 11 Summanden, die zusammen einen glatten Zehner oder Hunderter ergeben. Bei einer Summe darfst du Summanden vertauschen und zusammenfassen.",
+        "strategy": "Suche in 37 + 49 + 11 Summanden, die zusammen einen glatten Zehner oder Hunderter ergeben. Bei einer Summe darfst du Summanden vertauschen und zusammenfassen. Nach dem Umordnen gilt: Schreibe das Ergebnis eines Zahlenpaars in der nächsten Zeile genau unter seine Klammer. Übernimm alle übrigen Summanden und Pluszeichen unverändert.",
         "start": "Schau dir 49 und 11 an. Warum passen diese Zahlen gut zusammen? Berechne ihre Summe selbst.",
         "check": "Vergleiche deine neue Reihenfolge mit 37 + 49 + 11. Ist jede Zahl genau einmal enthalten? Prüfe durch Nachrechnen in der ursprünglichen Reihenfolge.",
         "trap": "Beim Umordnen darf kein Summand verloren gehen oder doppelt vorkommen. Diese Gesetze gelten hier, weil ausschließlich addiert wird.",
@@ -806,14 +800,14 @@ window.taskHelpData = {
           "Schreibe 37 + 49 + 11 ab. Sind alle Rechenzeichen Pluszeichen?",
           "Schau dir 49 und 11 an. Warum passen diese Zahlen gut zusammen? Berechne ihre Summe selbst.",
           "Schreibe die ganze Aufgabe mit deinen Klammern neu auf. Jede ursprüngliche Zahl muss genau einmal vorkommen.",
-          "Berechne zuerst deine Klammern und addiere danach die übrigen Summanden. Notiere die Rechenschritte in deinem Heft."
+          "Berechne eine Klammer. Schreibe ihr Ergebnis in der nächsten Zeile genau unter diese Klammer und übernimm den Rest unverändert. Wiederhole das für die nächste Klammer. Rechne danach selbst weiter."
         ],
-        "partial": "Ein günstiges Zahlenpaar ist vorgerechnet: 49 + 11 = 60. Damit kannst du die Aufgabe so weiterschreiben: 60 + 37 = □. Rechne selbst weiter."
+        "partial": "Ein günstiges Zahlenpaar ist vorgerechnet: 49 + 11 = 60.  Das Ergebnis des Zahlenpaars steht in der nächsten Zeile unter seiner Klammer. Die übrigen Summanden bleiben an ihrem Platz. Rechne selbst weiter."
       },
       {
         "label": "c)",
         "expression": "24 + 26 + 45 + 55",
-        "strategy": "Suche in 24 + 26 + 45 + 55 Summanden, die zusammen einen glatten Zehner oder Hunderter ergeben. Bei einer Summe darfst du Summanden vertauschen und zusammenfassen.",
+        "strategy": "Suche in 24 + 26 + 45 + 55 Summanden, die zusammen einen glatten Zehner oder Hunderter ergeben. Bei einer Summe darfst du Summanden vertauschen und zusammenfassen. Nach dem Umordnen gilt: Schreibe das Ergebnis eines Zahlenpaars in der nächsten Zeile genau unter seine Klammer. Übernimm alle übrigen Summanden und Pluszeichen unverändert.",
         "start": "Schau dir 24 und 26 an. Warum passen diese Zahlen gut zusammen? Berechne ihre Summe selbst.",
         "check": "Vergleiche deine neue Reihenfolge mit 24 + 26 + 45 + 55. Ist jede Zahl genau einmal enthalten? Prüfe durch Nachrechnen in der ursprünglichen Reihenfolge.",
         "trap": "Beim Umordnen darf kein Summand verloren gehen oder doppelt vorkommen. Diese Gesetze gelten hier, weil ausschließlich addiert wird.",
@@ -822,9 +816,9 @@ window.taskHelpData = {
           "Schau dir 24 und 26 an. Warum passen diese Zahlen gut zusammen? Berechne ihre Summe selbst.",
           "Suche ein weiteres günstiges Paar: Was fällt dir bei 45 und 55 auf? Fasse auch dieses Paar in einer Klammer zusammen.",
           "Schreibe die ganze Aufgabe mit deinen Klammern neu auf. Jede ursprüngliche Zahl muss genau einmal vorkommen.",
-          "Berechne zuerst deine Klammern und addiere danach die übrigen Summanden. Notiere die Rechenschritte in deinem Heft."
+          "Berechne eine Klammer. Schreibe ihr Ergebnis in der nächsten Zeile genau unter diese Klammer und übernimm den Rest unverändert. Wiederhole das für die nächste Klammer. Rechne danach selbst weiter."
         ],
-        "partial": "Ein günstiges Zahlenpaar ist vorgerechnet: 24 + 26 = 50. Damit kannst du die Aufgabe so weiterschreiben: 50 + 45 + 55 = □. Rechne selbst weiter."
+        "partial": "Ein günstiges Zahlenpaar ist vorgerechnet: 24 + 26 = 50.  Das Ergebnis des Zahlenpaars steht in der nächsten Zeile unter seiner Klammer. Die übrigen Summanden bleiben an ihrem Platz. Rechne selbst weiter."
       }
     ]
   },
@@ -835,7 +829,7 @@ window.taskHelpData = {
       {
         "label": "a)",
         "expression": "26 + 13 + 24 + 37",
-        "strategy": "Suche in 26 + 13 + 24 + 37 Summanden, die zusammen einen glatten Zehner oder Hunderter ergeben. Bei einer Summe darfst du Summanden vertauschen und zusammenfassen.",
+        "strategy": "Suche in 26 + 13 + 24 + 37 Summanden, die zusammen einen glatten Zehner oder Hunderter ergeben. Bei einer Summe darfst du Summanden vertauschen und zusammenfassen. Nach dem Umordnen gilt: Schreibe das Ergebnis eines Zahlenpaars in der nächsten Zeile genau unter seine Klammer. Übernimm alle übrigen Summanden und Pluszeichen unverändert.",
         "start": "Schau dir 26 und 24 an. Warum passen diese Zahlen gut zusammen? Berechne ihre Summe selbst.",
         "check": "Vergleiche deine neue Reihenfolge mit 26 + 13 + 24 + 37. Ist jede Zahl genau einmal enthalten? Prüfe durch Nachrechnen in der ursprünglichen Reihenfolge.",
         "trap": "Beim Umordnen darf kein Summand verloren gehen oder doppelt vorkommen. Diese Gesetze gelten hier, weil ausschließlich addiert wird.",
@@ -844,14 +838,14 @@ window.taskHelpData = {
           "Schau dir 26 und 24 an. Warum passen diese Zahlen gut zusammen? Berechne ihre Summe selbst.",
           "Suche ein weiteres günstiges Paar: Was fällt dir bei 13 und 37 auf? Fasse auch dieses Paar in einer Klammer zusammen.",
           "Schreibe die ganze Aufgabe mit deinen Klammern neu auf. Jede ursprüngliche Zahl muss genau einmal vorkommen.",
-          "Berechne zuerst deine Klammern und addiere danach die übrigen Summanden. Notiere die Rechenschritte in deinem Heft."
+          "Berechne eine Klammer. Schreibe ihr Ergebnis in der nächsten Zeile genau unter diese Klammer und übernimm den Rest unverändert. Wiederhole das für die nächste Klammer. Rechne danach selbst weiter."
         ],
-        "partial": "Ein günstiges Zahlenpaar ist vorgerechnet: 26 + 24 = 50. Damit kannst du die Aufgabe so weiterschreiben: 50 + 13 + 37 = □. Rechne selbst weiter."
+        "partial": "Ein günstiges Zahlenpaar ist vorgerechnet: 26 + 24 = 50.  Das Ergebnis des Zahlenpaars steht in der nächsten Zeile unter seiner Klammer. Die übrigen Summanden bleiben an ihrem Platz. Rechne selbst weiter."
       },
       {
         "label": "b)",
         "expression": "77 + 34 + 66 + 23",
-        "strategy": "Suche in 77 + 34 + 66 + 23 Summanden, die zusammen einen glatten Zehner oder Hunderter ergeben. Bei einer Summe darfst du Summanden vertauschen und zusammenfassen.",
+        "strategy": "Suche in 77 + 34 + 66 + 23 Summanden, die zusammen einen glatten Zehner oder Hunderter ergeben. Bei einer Summe darfst du Summanden vertauschen und zusammenfassen. Nach dem Umordnen gilt: Schreibe das Ergebnis eines Zahlenpaars in der nächsten Zeile genau unter seine Klammer. Übernimm alle übrigen Summanden und Pluszeichen unverändert.",
         "start": "Schau dir 77 und 23 an. Warum passen diese Zahlen gut zusammen? Berechne ihre Summe selbst.",
         "check": "Vergleiche deine neue Reihenfolge mit 77 + 34 + 66 + 23. Ist jede Zahl genau einmal enthalten? Prüfe durch Nachrechnen in der ursprünglichen Reihenfolge.",
         "trap": "Beim Umordnen darf kein Summand verloren gehen oder doppelt vorkommen. Diese Gesetze gelten hier, weil ausschließlich addiert wird.",
@@ -860,14 +854,14 @@ window.taskHelpData = {
           "Schau dir 77 und 23 an. Warum passen diese Zahlen gut zusammen? Berechne ihre Summe selbst.",
           "Suche ein weiteres günstiges Paar: Was fällt dir bei 34 und 66 auf? Fasse auch dieses Paar in einer Klammer zusammen.",
           "Schreibe die ganze Aufgabe mit deinen Klammern neu auf. Jede ursprüngliche Zahl muss genau einmal vorkommen.",
-          "Berechne zuerst deine Klammern und addiere danach die übrigen Summanden. Notiere die Rechenschritte in deinem Heft."
+          "Berechne eine Klammer. Schreibe ihr Ergebnis in der nächsten Zeile genau unter diese Klammer und übernimm den Rest unverändert. Wiederhole das für die nächste Klammer. Rechne danach selbst weiter."
         ],
-        "partial": "Ein günstiges Zahlenpaar ist vorgerechnet: 77 + 23 = 100. Damit kannst du die Aufgabe so weiterschreiben: 100 + 34 + 66 = □. Rechne selbst weiter."
+        "partial": "Ein günstiges Zahlenpaar ist vorgerechnet: 77 + 23 = 100.  Das Ergebnis des Zahlenpaars steht in der nächsten Zeile unter seiner Klammer. Die übrigen Summanden bleiben an ihrem Platz. Rechne selbst weiter."
       },
       {
         "label": "c)",
         "expression": "11 + 39 + 55 + 16 + 45",
-        "strategy": "Suche in 11 + 39 + 55 + 16 + 45 Summanden, die zusammen einen glatten Zehner oder Hunderter ergeben. Bei einer Summe darfst du Summanden vertauschen und zusammenfassen.",
+        "strategy": "Suche in 11 + 39 + 55 + 16 + 45 Summanden, die zusammen einen glatten Zehner oder Hunderter ergeben. Bei einer Summe darfst du Summanden vertauschen und zusammenfassen. Nach dem Umordnen gilt: Schreibe das Ergebnis eines Zahlenpaars in der nächsten Zeile genau unter seine Klammer. Übernimm alle übrigen Summanden und Pluszeichen unverändert.",
         "start": "Schau dir 11 und 39 an. Warum passen diese Zahlen gut zusammen? Berechne ihre Summe selbst.",
         "check": "Vergleiche deine neue Reihenfolge mit 11 + 39 + 55 + 16 + 45. Ist jede Zahl genau einmal enthalten? Prüfe durch Nachrechnen in der ursprünglichen Reihenfolge.",
         "trap": "Beim Umordnen darf kein Summand verloren gehen oder doppelt vorkommen. Diese Gesetze gelten hier, weil ausschließlich addiert wird.",
@@ -876,9 +870,9 @@ window.taskHelpData = {
           "Schau dir 11 und 39 an. Warum passen diese Zahlen gut zusammen? Berechne ihre Summe selbst.",
           "Suche ein weiteres günstiges Paar: Was fällt dir bei 55 und 45 auf? Fasse auch dieses Paar in einer Klammer zusammen.",
           "Schreibe die ganze Aufgabe mit deinen Klammern neu auf. Jede ursprüngliche Zahl muss genau einmal vorkommen.",
-          "Berechne zuerst deine Klammern und addiere danach die übrigen Summanden. Notiere die Rechenschritte in deinem Heft."
+          "Berechne eine Klammer. Schreibe ihr Ergebnis in der nächsten Zeile genau unter diese Klammer und übernimm den Rest unverändert. Wiederhole das für die nächste Klammer. Rechne danach selbst weiter."
         ],
-        "partial": "Ein günstiges Zahlenpaar ist vorgerechnet: 11 + 39 = 50. Damit kannst du die Aufgabe so weiterschreiben: 50 + 55 + 16 + 45 = □. Rechne selbst weiter."
+        "partial": "Ein günstiges Zahlenpaar ist vorgerechnet: 11 + 39 = 50.  Das Ergebnis des Zahlenpaars steht in der nächsten Zeile unter seiner Klammer. Die übrigen Summanden bleiben an ihrem Platz. Rechne selbst weiter."
       }
     ]
   }
